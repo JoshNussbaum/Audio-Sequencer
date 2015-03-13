@@ -26,19 +26,19 @@
     
     BBVoice *bass = [BBVoice voiceWithSubdivision:BBGrooverBeatSixteenth];
     bass.name = @"Bass Drum";
-    bass.audioPath = @"bassdrum.wav";
+    bass.audioPath = @"kick.wav";
     
     BBVoice *snare = [BBVoice voiceWithSubdivision:BBGrooverBeatSixteenth];
     snare.name = @"Snare drum";
-    snare.audioPath = @"snare.aif";
+    snare.audioPath = @"snare.wav";
     
     BBVoice *hihat = [BBVoice voiceWithSubdivision:BBGrooverBeatSixteenth];
     hihat.name = @"Hi Hat";
-    hihat.audioPath = @"clap2.wav";
+    hihat.audioPath = @"hihat.wav";
     
     BBVoice *kick = [BBVoice voiceWithSubdivision:BBGrooverBeatSixteenth];
     kick.name = @"Kick";
-    kick.audioPath = @"kick.wav";
+    kick.audioPath = @"clap.wav";
 
     
     groove.voices = @[bass, snare, hihat, kick];
@@ -53,6 +53,19 @@
     
     self.tempoSlider.value = groove.tempo;
     [self updateTempo:groove.tempo];
+    
+    self.startButton.layer.borderColor = [UIColor blackColor].CGColor;
+    self.startButton.layer.borderWidth = 1.0;
+    self.startButton.layer.cornerRadius = 10;
+    
+    self.stopButton.layer.borderColor = [UIColor blackColor].CGColor;
+    self.stopButton.layer.borderWidth = 1.0;
+    self.stopButton.layer.cornerRadius = 10;
+    
+    self.clearButton.layer.borderColor = [UIColor blackColor].CGColor;
+    self.clearButton.layer.borderWidth = 1.0;
+    self.clearButton.layer.cornerRadius = 10;
+
 }
 
 #pragma mark BBGrooverDelegate Methods

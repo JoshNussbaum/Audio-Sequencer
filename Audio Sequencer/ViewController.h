@@ -7,11 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
 #import "GridView.h"
 #import "TimerView.h"
 #import "BBGroover.h"
 
 @interface ViewController : UIViewController <BBGrooverDelegate, GridViewDelegate, TimerViewDelegate>
+@property (strong, nonatomic) IBOutlet UIButton *startButton;
+@property (strong, nonatomic) IBOutlet UIButton *stopButton;
+@property (strong, nonatomic) IBOutlet UIButton *clearButton;
 
 @property (nonatomic, strong) BBGroover *groover;
 @property (strong, nonatomic) IBOutlet UISlider *tempoSlider;

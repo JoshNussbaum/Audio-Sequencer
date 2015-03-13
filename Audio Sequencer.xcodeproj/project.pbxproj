@@ -18,20 +18,16 @@
 		030A8D1D1AA4516A00107112 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 030A8D131AA4516A00107112 /* Icon@2x.png */; };
 		030A8D1E1AA4516A00107112 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 030A8D141AA4516A00107112 /* iTunesArtwork.png */; };
 		030A8D1F1AA4516A00107112 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 030A8D151AA4516A00107112 /* iTunesArtwork@2x.png */; };
-		030A8D301AA4546D00107112 /* hihat.aif in Resources */ = {isa = PBXBuildFile; fileRef = 030A8D2C1AA4546D00107112 /* hihat.aif */; };
-		030A8D311AA4546D00107112 /* kick.aif in Resources */ = {isa = PBXBuildFile; fileRef = 030A8D2D1AA4546D00107112 /* kick.aif */; };
-		030A8D321AA4546D00107112 /* snare.aif in Resources */ = {isa = PBXBuildFile; fileRef = 030A8D2E1AA4546D00107112 /* snare.aif */; };
-		030A8D331AA4546D00107112 /* tom.aif in Resources */ = {isa = PBXBuildFile; fileRef = 030A8D2F1AA4546D00107112 /* tom.aif */; };
-		0351CBE81AA5C6BE006BC351 /* clap.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0351CBE71AA5C6BE006BC351 /* clap.wav */; };
-		0351CBEA1AA5C6C5006BC351 /* bassdrum.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0351CBE91AA5C6C5006BC351 /* bassdrum.wav */; };
-		0351CBEC1AA5C774006BC351 /* clap2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0351CBEB1AA5C774006BC351 /* clap2.wav */; };
+		03575CA91AAF732200CEC16E /* clap.wav in Resources */ = {isa = PBXBuildFile; fileRef = 03575CA51AAF732200CEC16E /* clap.wav */; };
+		03575CAA1AAF732200CEC16E /* hihat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 03575CA61AAF732200CEC16E /* hihat.wav */; };
+		03575CAB1AAF732200CEC16E /* kick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 03575CA71AAF732200CEC16E /* kick.wav */; };
+		03575CAC1AAF732200CEC16E /* snare.wav in Resources */ = {isa = PBXBuildFile; fileRef = 03575CA81AAF732200CEC16E /* snare.wav */; };
 		03874A631AA32B6900B4D50E /* GridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03874A621AA32B6900B4D50E /* GridView.m */; };
-		03B404AB1AA5A41A008EEBBA /* kick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 03B404AA1AA5A41A008EEBBA /* kick.wav */; };
+		03D548181AA993CC00A34A68 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03D548171AA993CC00A34A68 /* Images.xcassets */; };
 		03DE75A61AA04F4400E11176 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DE75A51AA04F4400E11176 /* main.m */; };
 		03DE75A91AA04F4400E11176 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DE75A81AA04F4400E11176 /* AppDelegate.m */; };
 		03DE75AC1AA04F4400E11176 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DE75AB1AA04F4400E11176 /* ViewController.m */; };
 		03DE75AF1AA04F4400E11176 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03DE75AD1AA04F4400E11176 /* Main.storyboard */; };
-		03DE75B11AA04F4400E11176 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03DE75B01AA04F4400E11176 /* Images.xcassets */; };
 		03DE75B41AA04F4400E11176 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03DE75B21AA04F4400E11176 /* LaunchScreen.xib */; };
 		03DE75C01AA04F4400E11176 /* Audio_SequencerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DE75BF1AA04F4400E11176 /* Audio_SequencerTests.m */; };
 		E1313C13DFA9EB31F4CEA9EC /* libPods-Audio Sequencer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 404DDAE25AB13A575D8E2F71 /* libPods-Audio Sequencer.a */; };
@@ -60,16 +56,13 @@
 		030A8D131AA4516A00107112 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Icons/Icon@2x.png"; sourceTree = SOURCE_ROOT; };
 		030A8D141AA4516A00107112 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iTunesArtwork.png; path = Icons/iTunesArtwork.png; sourceTree = SOURCE_ROOT; };
 		030A8D151AA4516A00107112 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iTunesArtwork@2x.png"; path = "Icons/iTunesArtwork@2x.png"; sourceTree = SOURCE_ROOT; };
-		030A8D2C1AA4546D00107112 /* hihat.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = hihat.aif; path = Sounds/hihat.aif; sourceTree = SOURCE_ROOT; };
-		030A8D2D1AA4546D00107112 /* kick.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = kick.aif; path = Sounds/kick.aif; sourceTree = SOURCE_ROOT; };
-		030A8D2E1AA4546D00107112 /* snare.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = snare.aif; path = Sounds/snare.aif; sourceTree = SOURCE_ROOT; };
-		030A8D2F1AA4546D00107112 /* tom.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = tom.aif; path = Sounds/tom.aif; sourceTree = SOURCE_ROOT; };
-		0351CBE71AA5C6BE006BC351 /* clap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = clap.wav; path = Sounds/clap.wav; sourceTree = SOURCE_ROOT; };
-		0351CBE91AA5C6C5006BC351 /* bassdrum.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = bassdrum.wav; path = Sounds/bassdrum.wav; sourceTree = SOURCE_ROOT; };
-		0351CBEB1AA5C774006BC351 /* clap2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = clap2.wav; path = Sounds/clap2.wav; sourceTree = SOURCE_ROOT; };
+		03575CA51AAF732200CEC16E /* clap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = clap.wav; path = Sounds/clap.wav; sourceTree = SOURCE_ROOT; };
+		03575CA61AAF732200CEC16E /* hihat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = hihat.wav; path = Sounds/hihat.wav; sourceTree = SOURCE_ROOT; };
+		03575CA71AAF732200CEC16E /* kick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = kick.wav; path = Sounds/kick.wav; sourceTree = SOURCE_ROOT; };
+		03575CA81AAF732200CEC16E /* snare.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = snare.wav; path = Sounds/snare.wav; sourceTree = SOURCE_ROOT; };
 		03874A611AA32B6900B4D50E /* GridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GridView.h; path = ../GridView.h; sourceTree = "<group>"; };
 		03874A621AA32B6900B4D50E /* GridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GridView.m; path = ../GridView.m; sourceTree = "<group>"; };
-		03B404AA1AA5A41A008EEBBA /* kick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = kick.wav; path = Sounds/kick.wav; sourceTree = SOURCE_ROOT; };
+		03D548171AA993CC00A34A68 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		03DE75A01AA04F4400E11176 /* Audio Fuego.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Audio Fuego.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03DE75A41AA04F4400E11176 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03DE75A51AA04F4400E11176 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -78,7 +71,6 @@
 		03DE75AA1AA04F4400E11176 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		03DE75AB1AA04F4400E11176 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		03DE75AE1AA04F4400E11176 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		03DE75B01AA04F4400E11176 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		03DE75B31AA04F4400E11176 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		03DE75B91AA04F4400E11176 /* Audio SequencerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Audio SequencerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03DE75BE1AA04F4400E11176 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -139,8 +131,8 @@
 				03874A611AA32B6900B4D50E /* GridView.h */,
 				03874A621AA32B6900B4D50E /* GridView.m */,
 				03DE75AD1AA04F4400E11176 /* Main.storyboard */,
-				03DE75B01AA04F4400E11176 /* Images.xcassets */,
 				03DE75B21AA04F4400E11176 /* LaunchScreen.xib */,
+				03D548171AA993CC00A34A68 /* Images.xcassets */,
 				03DE75A31AA04F4400E11176 /* Supporting Files */,
 			);
 			path = "Audio Sequencer";
@@ -149,14 +141,10 @@
 		03DE75A31AA04F4400E11176 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0351CBEB1AA5C774006BC351 /* clap2.wav */,
-				0351CBE91AA5C6C5006BC351 /* bassdrum.wav */,
-				0351CBE71AA5C6BE006BC351 /* clap.wav */,
-				03B404AA1AA5A41A008EEBBA /* kick.wav */,
-				030A8D2C1AA4546D00107112 /* hihat.aif */,
-				030A8D2D1AA4546D00107112 /* kick.aif */,
-				030A8D2E1AA4546D00107112 /* snare.aif */,
-				030A8D2F1AA4546D00107112 /* tom.aif */,
+				03575CA51AAF732200CEC16E /* clap.wav */,
+				03575CA61AAF732200CEC16E /* hihat.wav */,
+				03575CA71AAF732200CEC16E /* kick.wav */,
+				03575CA81AAF732200CEC16E /* snare.wav */,
 				030A8D0C1AA4516A00107112 /* AppIcon.appiconset */,
 				030A8D0D1AA4516A00107112 /* Icon-60.png */,
 				030A8D0E1AA4516A00107112 /* Icon-72.png */,
@@ -289,27 +277,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				030A8D321AA4546D00107112 /* snare.aif in Resources */,
 				030A8D171AA4516A00107112 /* Icon-60.png in Resources */,
 				030A8D1E1AA4516A00107112 /* iTunesArtwork.png in Resources */,
 				030A8D1D1AA4516A00107112 /* Icon@2x.png in Resources */,
 				03DE75AF1AA04F4400E11176 /* Main.storyboard in Resources */,
-				0351CBEA1AA5C6C5006BC351 /* bassdrum.wav in Resources */,
-				030A8D311AA4546D00107112 /* kick.aif in Resources */,
-				03B404AB1AA5A41A008EEBBA /* kick.wav in Resources */,
+				03575CA91AAF732200CEC16E /* clap.wav in Resources */,
 				030A8D1B1AA4516A00107112 /* Icon-Small-50@2x.png in Resources */,
+				03575CAB1AAF732200CEC16E /* kick.wav in Resources */,
+				03D548181AA993CC00A34A68 /* Images.xcassets in Resources */,
 				030A8D191AA4516A00107112 /* Icon-72@2x.png in Resources */,
 				030A8D181AA4516A00107112 /* Icon-72.png in Resources */,
-				0351CBE81AA5C6BE006BC351 /* clap.wav in Resources */,
-				0351CBEC1AA5C774006BC351 /* clap2.wav in Resources */,
 				03DE75B41AA04F4400E11176 /* LaunchScreen.xib in Resources */,
+				03575CAC1AAF732200CEC16E /* snare.wav in Resources */,
 				030A8D161AA4516A00107112 /* AppIcon.appiconset in Resources */,
 				030A8D1A1AA4516A00107112 /* Icon-Small-50.png in Resources */,
-				030A8D331AA4546D00107112 /* tom.aif in Resources */,
 				030A8D1F1AA4516A00107112 /* iTunesArtwork@2x.png in Resources */,
+				03575CAA1AAF732200CEC16E /* hihat.wav in Resources */,
 				030A8D1C1AA4516A00107112 /* Icon.png in Resources */,
-				03DE75B11AA04F4400E11176 /* Images.xcassets in Resources */,
-				030A8D301AA4546D00107112 /* hihat.aif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,9 +474,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Josh  Nussbaum (B28Q4692N6)";
 				INFOPLIST_FILE = "Audio Sequencer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "Audio Fuego";
+				PROVISIONING_PROFILE = "6aca36a3-bcb5-4b6a-bc92-79f1490fdc15";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -503,9 +489,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Josh  Nussbaum (B28Q4692N6)";
 				INFOPLIST_FILE = "Audio Sequencer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "Audio Fuego";
+				PROVISIONING_PROFILE = "6aca36a3-bcb5-4b6a-bc92-79f1490fdc15";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

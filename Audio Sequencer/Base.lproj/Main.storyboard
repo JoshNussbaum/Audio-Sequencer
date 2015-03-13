@@ -28,8 +28,8 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qEE-25-UhW">
                                                 <rect key="frame" x="0.0" y="0.0" width="68" height="56"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drum" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hu-yO-lmt">
-                                                        <rect key="frame" x="14" y="15" width="41" height="25"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kick" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hu-yO-lmt">
+                                                        <rect key="frame" x="19" y="15" width="31" height="25"/>
                                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <nil key="highlightedColor"/>
@@ -44,8 +44,8 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VlI-Vk-lNj">
                                                 <rect key="frame" x="0.0" y="170" width="68" height="57"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kick" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6j-0X-SQ9">
-                                                        <rect key="frame" x="19" y="16" width="31" height="25"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clap" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6j-0X-SQ9">
+                                                        <rect key="frame" x="18" y="16" width="33" height="25"/>
                                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <nil key="highlightedColor"/>
@@ -61,8 +61,8 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hcE-Ph-EQt">
                                                 <rect key="frame" x="0.0" y="113" width="68" height="57"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clap" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdk-1p-yJn">
-                                                        <rect key="frame" x="18" y="16" width="33" height="25"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi Hat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdk-1p-yJn">
+                                                        <rect key="frame" x="10" y="16" width="48" height="25"/>
                                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <nil key="highlightedColor"/>
@@ -121,7 +121,7 @@
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iNF-Kf-mhv" customClass="GridView">
                                         <rect key="frame" x="68" y="33" width="500" height="227"/>
-                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="1" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="delegate" destination="BYZ-38-t0r" id="rYp-Fn-FVa"/>
                                         </connections>
@@ -146,42 +146,47 @@
                                 <rect key="frame" x="0.0" y="0.0" width="568" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NNg-oe-VNZ">
-                                        <rect key="frame" x="8" y="14" width="35" height="32"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <state key="normal" title="Start"/>
+                                        <rect key="frame" x="15" y="13" width="43" height="34"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="16"/>
+                                        <state key="normal" title=" Start ">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                         <connections>
                                             <action selector="startTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s79-W3-wys"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ml5-Wx-Nqk">
-                                        <rect key="frame" x="65" y="14" width="35" height="32"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <state key="normal" title="Stop"/>
+                                        <rect key="frame" x="80" y="13" width="43" height="34"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="16"/>
+                                        <state key="normal" title=" Stop ">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                         <connections>
                                             <action selector="stopTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="THP-VN-cqX"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZt-5m-d4T">
-                                        <rect key="frame" x="521" y="15" width="39" height="32"/>
+                                        <rect key="frame" x="502" y="15" width="51" height="32"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="39" id="QFj-Hg-5gN"/>
+                                            <constraint firstAttribute="width" constant="51" id="Lgu-AN-ct5"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <state key="normal" title="Clear">
+                                        <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="16"/>
+                                        <state key="normal" title=" Clear ">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <action selector="clearTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0vI-nw-jJN"/>
                                         </connections>
                                     </button>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="120" minValue="40" maxValue="300" translatesAutoresizingMaskIntoConstraints="NO" id="bvt-Eo-qs0">
-                                        <rect key="frame" x="173" y="15" width="223" height="31"/>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="120" minValue="40" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="bvt-Eo-qs0">
+                                        <rect key="frame" x="189" y="15" width="191" height="31"/>
                                         <connections>
                                             <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="ZmG-CT-c9F"/>
                                         </connections>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="120 bpm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Cr-vu-7Ll">
-                                        <rect key="frame" x="419" y="16" width="87" height="24"/>
+                                        <rect key="frame" x="386" y="16" width="91" height="24"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
@@ -189,21 +194,20 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="2Cr-vu-7Ll" firstAttribute="top" secondItem="azq-cN-Adl" secondAttribute="top" constant="16" id="18I-BR-y4n"/>
-                                    <constraint firstAttribute="bottom" secondItem="iZt-5m-d4T" secondAttribute="bottom" constant="13" id="2b1-iY-CcW"/>
-                                    <constraint firstItem="2Cr-vu-7Ll" firstAttribute="firstBaseline" secondItem="iZt-5m-d4T" secondAttribute="firstBaseline" id="3bC-at-iFy"/>
                                     <constraint firstItem="ml5-Wx-Nqk" firstAttribute="leading" secondItem="NNg-oe-VNZ" secondAttribute="trailing" constant="22" id="Any-gr-C57"/>
-                                    <constraint firstItem="bvt-Eo-qs0" firstAttribute="leading" secondItem="ml5-Wx-Nqk" secondAttribute="trailing" constant="75" id="IIk-Ak-bTL"/>
-                                    <constraint firstItem="iZt-5m-d4T" firstAttribute="baseline" secondItem="2Cr-vu-7Ll" secondAttribute="firstBaseline" id="Qrk-8i-zqa"/>
+                                    <constraint firstItem="iZt-5m-d4T" firstAttribute="firstBaseline" secondItem="2Cr-vu-7Ll" secondAttribute="firstBaseline" id="DO2-UO-MuR"/>
+                                    <constraint firstItem="bvt-Eo-qs0" firstAttribute="leading" secondItem="ml5-Wx-Nqk" secondAttribute="trailing" constant="68" id="IIk-Ak-bTL"/>
                                     <constraint firstItem="ml5-Wx-Nqk" firstAttribute="baseline" secondItem="NNg-oe-VNZ" secondAttribute="baseline" id="SDg-sR-lgl"/>
                                     <constraint firstAttribute="bottom" secondItem="2Cr-vu-7Ll" secondAttribute="bottom" constant="20" id="Syw-01-eUI"/>
+                                    <constraint firstItem="iZt-5m-d4T" firstAttribute="trailing" secondItem="azq-cN-Adl" secondAttribute="trailingMargin" constant="-7" id="TfZ-4w-JH6"/>
+                                    <constraint firstItem="iZt-5m-d4T" firstAttribute="leading" secondItem="2Cr-vu-7Ll" secondAttribute="trailing" constant="25" id="VEv-5u-0ou"/>
                                     <constraint firstItem="bvt-Eo-qs0" firstAttribute="centerY" secondItem="ml5-Wx-Nqk" secondAttribute="centerY" id="ame-Aw-dRQ"/>
-                                    <constraint firstItem="iZt-5m-d4T" firstAttribute="trailing" secondItem="azq-cN-Adl" secondAttribute="trailingMargin" id="azu-eR-PTr"/>
+                                    <constraint firstItem="iZt-5m-d4T" firstAttribute="top" secondItem="bvt-Eo-qs0" secondAttribute="top" id="dtg-De-pIc"/>
                                     <constraint firstItem="bvt-Eo-qs0" firstAttribute="top" secondItem="azq-cN-Adl" secondAttribute="top" constant="15" id="fFa-DK-HZq"/>
-                                    <constraint firstItem="NNg-oe-VNZ" firstAttribute="leading" secondItem="azq-cN-Adl" secondAttribute="leadingMargin" id="mLW-7p-4sV"/>
+                                    <constraint firstItem="NNg-oe-VNZ" firstAttribute="leading" secondItem="azq-cN-Adl" secondAttribute="leadingMargin" constant="7" id="mLW-7p-4sV"/>
                                     <constraint firstItem="bvt-Eo-qs0" firstAttribute="centerX" secondItem="azq-cN-Adl" secondAttribute="centerX" id="mk1-G7-d7E"/>
-                                    <constraint firstItem="2Cr-vu-7Ll" firstAttribute="leading" secondItem="bvt-Eo-qs0" secondAttribute="trailing" constant="25" id="oF5-OW-0OD"/>
-                                    <constraint firstItem="bvt-Eo-qs0" firstAttribute="top" secondItem="iZt-5m-d4T" secondAttribute="top" id="oTK-M6-tAk"/>
-                                    <constraint firstItem="iZt-5m-d4T" firstAttribute="leading" secondItem="2Cr-vu-7Ll" secondAttribute="trailing" constant="15" id="zB1-2t-jZC"/>
+                                    <constraint firstItem="iZt-5m-d4T" firstAttribute="baseline" secondItem="2Cr-vu-7Ll" secondAttribute="firstBaseline" id="noU-OF-4yb"/>
+                                    <constraint firstItem="2Cr-vu-7Ll" firstAttribute="leading" secondItem="bvt-Eo-qs0" secondAttribute="trailing" constant="8" id="oF5-OW-0OD"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -222,6 +226,9 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="clearButton" destination="iZt-5m-d4T" id="2gE-kV-Mn2"/>
+                        <outlet property="startButton" destination="NNg-oe-VNZ" id="lYG-UD-cTP"/>
+                        <outlet property="stopButton" destination="ml5-Wx-Nqk" id="cFb-bt-C3T"/>
                         <outlet property="tempoLabel" destination="2Cr-vu-7Ll" id="I7T-6b-mhr"/>
                         <outlet property="tempoSlider" destination="bvt-Eo-qs0" id="pHz-7E-ScO"/>
                         <outlet property="tickView" destination="da8-XR-TZR" id="DN3-9L-oKu"/>

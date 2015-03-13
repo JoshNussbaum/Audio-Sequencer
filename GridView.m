@@ -36,7 +36,7 @@
             float y      = i * height;
             
             if ([_delegate gridView:self isSelectedAtRow:i column:j]) {
-                CGContextSetRGBFillColor(cxt, 0.1, 0.3, 1.0, 1);
+                CGContextSetRGBFillColor(cxt, 1.0, 0.2, 0.2, 1);
                 CGContextSetRGBStrokeColor(cxt, 1, 1, 1, 1);
             } else {
                 CGContextSetRGBFillColor(cxt, 1, 1, 1, 1);
