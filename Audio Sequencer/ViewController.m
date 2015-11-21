@@ -68,6 +68,41 @@
 
 }
 
+// TRY TO LOAD NEW SOUNDS
+-(void)newSounds {
+    BBGroove *groove = [BBGroove groove];
+    groove.tempo = 120;
+    groove.beats = 4;
+    groove.beatUnit = BBGrooverBeatQuarter;
+    
+    BBVoice *bass = [BBVoice voiceWithSubdivision:BBGrooverBeatSixteenth];
+    bass.name = @"Bass Drum";
+    bass.audioPath = @"kick.wav";
+    
+    BBVoice *snare = [BBVoice voiceWithSubdivision:BBGrooverBeatSixteenth];
+    snare.name = @"Snare drum";
+    snare.audioPath = @"snare.wav";
+    
+    BBVoice *hihat = [BBVoice voiceWithSubdivision:BBGrooverBeatSixteenth];
+    hihat.name = @"Hi Hat";
+    hihat.audioPath = @"hihat.wav";
+    
+    BBVoice *kick = [BBVoice voiceWithSubdivision:BBGrooverBeatSixteenth];
+    kick.name = @"Kick";
+    kick.audioPath = @"clap.wav";
+    
+    
+    groove.voices = @[bass, snare, hihat, kick];
+    
+    _groover = [BBGroover grooverWithGroove:groove];
+    
+    _groover.delegate = self;
+    
+    for (BBVoice *voice in groove.voices) {
+        [[OALSimpleAudio sharedInstance] preloadEffect:voice.audioPath];
+    }
+}
+
 #pragma mark BBGrooverDelegate Methods
 - (void) groover:(BBGroover *)sequencer didTick:(NSUInteger)tick {
     _tickView.currentTick = tick;

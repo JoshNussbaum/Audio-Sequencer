@@ -18,12 +18,12 @@
 		030A8D1D1AA4516A00107112 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 030A8D131AA4516A00107112 /* Icon@2x.png */; };
 		030A8D1E1AA4516A00107112 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 030A8D141AA4516A00107112 /* iTunesArtwork.png */; };
 		030A8D1F1AA4516A00107112 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 030A8D151AA4516A00107112 /* iTunesArtwork@2x.png */; };
+		03410E171ABCD28B00216DEB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03410E161ABCD28B00216DEB /* Images.xcassets */; };
 		03575CA91AAF732200CEC16E /* clap.wav in Resources */ = {isa = PBXBuildFile; fileRef = 03575CA51AAF732200CEC16E /* clap.wav */; };
 		03575CAA1AAF732200CEC16E /* hihat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 03575CA61AAF732200CEC16E /* hihat.wav */; };
 		03575CAB1AAF732200CEC16E /* kick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 03575CA71AAF732200CEC16E /* kick.wav */; };
 		03575CAC1AAF732200CEC16E /* snare.wav in Resources */ = {isa = PBXBuildFile; fileRef = 03575CA81AAF732200CEC16E /* snare.wav */; };
 		03874A631AA32B6900B4D50E /* GridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03874A621AA32B6900B4D50E /* GridView.m */; };
-		03D548181AA993CC00A34A68 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03D548171AA993CC00A34A68 /* Images.xcassets */; };
 		03DE75A61AA04F4400E11176 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DE75A51AA04F4400E11176 /* main.m */; };
 		03DE75A91AA04F4400E11176 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DE75A81AA04F4400E11176 /* AppDelegate.m */; };
 		03DE75AC1AA04F4400E11176 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DE75AB1AA04F4400E11176 /* ViewController.m */; };
@@ -56,13 +56,13 @@
 		030A8D131AA4516A00107112 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Icons/Icon@2x.png"; sourceTree = SOURCE_ROOT; };
 		030A8D141AA4516A00107112 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iTunesArtwork.png; path = Icons/iTunesArtwork.png; sourceTree = SOURCE_ROOT; };
 		030A8D151AA4516A00107112 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iTunesArtwork@2x.png"; path = "Icons/iTunesArtwork@2x.png"; sourceTree = SOURCE_ROOT; };
+		03410E161ABCD28B00216DEB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		03575CA51AAF732200CEC16E /* clap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = clap.wav; path = Sounds/clap.wav; sourceTree = SOURCE_ROOT; };
 		03575CA61AAF732200CEC16E /* hihat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = hihat.wav; path = Sounds/hihat.wav; sourceTree = SOURCE_ROOT; };
 		03575CA71AAF732200CEC16E /* kick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = kick.wav; path = Sounds/kick.wav; sourceTree = SOURCE_ROOT; };
 		03575CA81AAF732200CEC16E /* snare.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = snare.wav; path = Sounds/snare.wav; sourceTree = SOURCE_ROOT; };
 		03874A611AA32B6900B4D50E /* GridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GridView.h; path = ../GridView.h; sourceTree = "<group>"; };
 		03874A621AA32B6900B4D50E /* GridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GridView.m; path = ../GridView.m; sourceTree = "<group>"; };
-		03D548171AA993CC00A34A68 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		03DE75A01AA04F4400E11176 /* Audio Fuego.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Audio Fuego.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03DE75A41AA04F4400E11176 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03DE75A51AA04F4400E11176 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -132,7 +132,7 @@
 				03874A621AA32B6900B4D50E /* GridView.m */,
 				03DE75AD1AA04F4400E11176 /* Main.storyboard */,
 				03DE75B21AA04F4400E11176 /* LaunchScreen.xib */,
-				03D548171AA993CC00A34A68 /* Images.xcassets */,
+				03410E161ABCD28B00216DEB /* Images.xcassets */,
 				03DE75A31AA04F4400E11176 /* Supporting Files */,
 			);
 			path = "Audio Sequencer";
@@ -284,11 +284,11 @@
 				03575CA91AAF732200CEC16E /* clap.wav in Resources */,
 				030A8D1B1AA4516A00107112 /* Icon-Small-50@2x.png in Resources */,
 				03575CAB1AAF732200CEC16E /* kick.wav in Resources */,
-				03D548181AA993CC00A34A68 /* Images.xcassets in Resources */,
 				030A8D191AA4516A00107112 /* Icon-72@2x.png in Resources */,
 				030A8D181AA4516A00107112 /* Icon-72.png in Resources */,
 				03DE75B41AA04F4400E11176 /* LaunchScreen.xib in Resources */,
 				03575CAC1AAF732200CEC16E /* snare.wav in Resources */,
+				03410E171ABCD28B00216DEB /* Images.xcassets in Resources */,
 				030A8D161AA4516A00107112 /* AppIcon.appiconset in Resources */,
 				030A8D1A1AA4516A00107112 /* Icon-Small-50.png in Resources */,
 				030A8D1F1AA4516A00107112 /* iTunesArtwork@2x.png in Resources */,
@@ -424,7 +424,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -460,7 +460,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
