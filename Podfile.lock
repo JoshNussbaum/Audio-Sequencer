@@ -1,13 +1,15 @@
 PODS:
   - BBGroover (0.1.0)
-  - ObjectAL-for-iPhone (2.4)
+  - ObjectAL-for-iPhone (2.6.0)
 
 DEPENDENCIES:
   - BBGroover
   - ObjectAL-for-iPhone
 
 SPEC CHECKSUMS:
-  BBGroover: 02f6d96f0a3b9394bc3feabbe8bd3c551e20aeae
-  ObjectAL-for-iPhone: 305e0d4548ed5897eab08a6e1cc1f6589213cc28
+  BBGroover: 845a43539e7bd3b6fd523d63e90090d2c2f8fb5f
+  ObjectAL-for-iPhone: 939215eb4b83c30ffe6dd9a637c47d1610db4e40
 
-COCOAPODS: 0.35.0
+PODFILE CHECKSUM: 4888da17ef834e60d183489f584f44f7c6aaf03c
+
+COCOAPODS: 1.1.1

@@ -23,6 +23,16 @@
 @property (strong, nonatomic) IBOutlet TimerView *tickView;
 @property (strong, nonatomic) IBOutlet UILabel *tempoLabel;
 
+@property (strong, nonatomic) IBOutlet UIView *kickView;
+@property (strong, nonatomic) IBOutlet UIView *openHatView;
+@property (strong, nonatomic) IBOutlet UIView *hiHatView;
+@property (strong, nonatomic) IBOutlet UIView *snareView;
+
+
+@property (strong, nonatomic) IBOutlet UILabel *kickLabel;
+@property (strong, nonatomic) IBOutlet UILabel *openHatsLabel;
+@property (strong, nonatomic) IBOutlet UILabel *hiHatLabel;
+@property (strong, nonatomic) IBOutlet UILabel *snareLabel;
 
 @end
 

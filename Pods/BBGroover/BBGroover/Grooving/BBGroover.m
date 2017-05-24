@@ -92,6 +92,7 @@
     
     _currentTick = [tick unsignedIntValue];
     
+    NSLog(@"%ui", _currentSubdivision);
     
     
     uint64_t interval = [self computeInterval];
@@ -106,7 +107,7 @@
     // totalTicks is the number of
     NSUInteger totalTicks = [self totalTicks];
     if (totalTicks == 0) {
-        @throw [NSException exceptionWithName:@"Invalid Subdivision" reason:[NSString stringWithFormat:@"Subdivision %lui is too large to be expressed in %lui/%lui time.", _currentSubdivision, (unsigned long)_groove.beats, _groove.beatUnit] userInfo:nil];
+        @throw [NSException exceptionWithName:@"Invalid Subdivision" reason:[NSString stringWithFormat:@"Subdivision %ui is too large to be expressed in %ui/%ui time.", _currentSubdivision, _groove.beats, _groove.beatUnit] userInfo:nil];
         
         
     }

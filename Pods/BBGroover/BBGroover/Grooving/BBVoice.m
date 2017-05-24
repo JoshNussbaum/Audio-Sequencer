@@ -26,7 +26,7 @@
         if (values.count < BBGrooverBeatMin ||
             values.count > BBGrooverBeatMax ||
             ![NSNumber isPowerOfTwo:values.count]) {
-            @throw [NSException exceptionWithName:@"Invalid Values" reason:[NSString stringWithFormat:@"The values array of BBVoice object was %lu, must match a length in BBGrooverBeat enum (4/8/16/32).", (unsigned long)values.count] userInfo:nil];
+            @throw [NSException exceptionWithName:@"Invalid Values" reason:[NSString stringWithFormat:@"The values array of BBVoice object was %d, must match a length in BBGrooverBeat enum (4/8/16/32).", values.count] userInfo:nil];
         }
         _values = [NSMutableArray arrayWithArray:values];
 		_velocities = [NSMutableArray arrayWithArray:velocities];

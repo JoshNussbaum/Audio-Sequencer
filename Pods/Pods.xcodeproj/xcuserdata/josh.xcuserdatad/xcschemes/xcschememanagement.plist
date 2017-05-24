@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-Audio Sequencer-BBGroover.xcscheme</key>
+		<key>BBGroover.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Audio Sequencer-ObjectAL-for-iPhone.xcscheme</key>
+		<key>ObjectAL-for-iPhone.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -19,20 +19,30 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-Audio SequencerTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>44303C1FD95414E73274636A</key>
+		<key>085C2B5FE1592DBB861EF8616B059459</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9641F82349C6562CC9122C22</key>
+		<key>2580315A9E2782340C7AEA004C91A1D9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A1FFD4421D85D51278255164</key>
+		<key>6F616789B32DEED8F42749F470239519</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F40877AAE56AF60AB7FA517F0D35962E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -1,1 +1,0 @@
-PODS_AUDIO_SEQUENCER_OBJECTAL_FOR_IPHONE_OTHER_LDFLAGS = -framework "AVFoundation" -framework "AudioToolbox" -framework "OpenAL"

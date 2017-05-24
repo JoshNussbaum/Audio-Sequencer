@@ -151,10 +151,20 @@
 			manualSuspendLock = value;
 			if(!interruptLock)
 			{
-				if(nil != suspendStatusChangeTarget)
-				{
-					objc_msgSend(suspendStatusChangeTarget, suspendStatusChangeSelector, manualSuspendLock);
-				}
+                // Assign weak member var to a local var to prevent deallocation within this block
+                id localSuspendStatusChangeTarget = suspendStatusChangeTarget;
+                if(nil != localSuspendStatusChangeTarget)
+                {
+                    if([localSuspendStatusChangeTarget respondsToSelector:suspendStatusChangeSelector])
+                    {
+                        NSMethodSignature *signature = [[localSuspendStatusChangeTarget class] instanceMethodSignatureForSelector:suspendStatusChangeSelector];
+                        NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:signature];
+                        [invocation setTarget:localSuspendStatusChangeTarget];
+                        [invocation setSelector:suspendStatusChangeSelector];
+                        [invocation setArgument:&manualSuspendLock atIndex:2];
+                        [invocation invoke];
+                    }
+                }
 			}
 		}
 		
@@ -216,12 +226,21 @@
 			interruptLock = value;
 			if(!manualSuspendLock)
 			{
-				if(nil != suspendStatusChangeTarget)
-				{
-                    void (*suspendStatusChange)(id, SEL, bool);
-                    suspendStatusChange = (void (*)(id, SEL, bool))[suspendStatusChangeTarget methodForSelector:suspendStatusChangeSelector];
-                    suspendStatusChange(suspendStatusChangeTarget, suspendStatusChangeSelector, interruptLock);
-				}
+                // Assign weak member variable to a local var to prevent deallocation within this block
+                id localSuspendStatusChangeTarget = suspendStatusChangeTarget;
+
+                if(nil != localSuspendStatusChangeTarget)
+                {
+                    if([localSuspendStatusChangeTarget respondsToSelector:suspendStatusChangeSelector])
+                    {
+                        NSMethodSignature *signature = [[localSuspendStatusChangeTarget class] instanceMethodSignatureForSelector:suspendStatusChangeSelector];
+                        NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:signature];
+                        [invocation setTarget:localSuspendStatusChangeTarget];
+                        [invocation setSelector:suspendStatusChangeSelector];
+                        [invocation setArgument:&interruptLock atIndex:2];
+                        [invocation invoke];
+                    }
+                }
 			}
 		}
 		

@@ -11,37 +11,183 @@
 #import "BBGroove.h"
 #import "OALSimpleAudio.h"
 
-@interface ViewController ()
+
+static NSString *kick1 = @"Kick 1";
+static NSString *kick2 = @"Kick 2";
+static NSString *kick3 = @"Kick 3";
+static NSString *kick4 = @"Kick 4";
+
+static NSString *hihat1 = @"Hi Hat 1";
+static NSString *hihat2 = @"Hi Hat 2";
+static NSString *hihat3= @"Hi Hat 3";
+static NSString *hihat4 = @"Hi Hat 4";
+
+
+static NSString *snare1 = @"Snare 1";
+static NSString *snare2 = @"Snare 2";
+
+
+static NSString *snap1 = @"Snap 1";
+static NSString *snap2 = @"Snap 2";
+
+
+static NSString *clap1 = @"Clap 1";
+static NSString *clap2 = @"Clap 2";
+
+
+static NSString *openhat1 = @"Open Hat 1";
+static NSString *openhat2 = @"Open Hat 2";
+
+static NSString *bassdrum1 = @"Bass Drum 1";
+
+static NSString *triangle1 = @"Triangle 1";
+
+
+
+// Make it so you can assign any of the 16 sounds to any channel.
+
+
+@interface ViewController (){
+    UIAlertController *actionSheet;
+    
+    
+    NSInteger channelIndex;
+    NSString *selectedSound;
+    
+    NSString *channelOneSound;
+    NSString *channelTwoSound;
+    NSString *channelThreeSound;
+    NSString *channelFourSound;
+    
+    NSInteger tempo_;
+    
+    BOOL loaded;
+    
+}
 
 @end
 
 @implementation ViewController
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    if (!loaded){
+        loaded = YES;
+        channelIndex = 0;
+        tempo_ = 120;
+        channelOneSound = kick1;
+        channelTwoSound = snare1;
+        channelThreeSound = hihat1;
+        channelFourSound = openhat1;
+    }
+    NSArray *views = @[self.snareView, self.kickView, self.hiHatView, self.openHatView];
+    NSArray *buttons = @[self.startButton, self.stopButton, self.clearButton];
+    
+    for (UIView *view in views){
+        [self makeRounded:view.layer color:[UIColor blackColor] borderWidth:0.1f cornerRadius:3.0f];
+    }
+    
+    
+    for (UIButton *button in buttons){
+        button.layer.borderColor = [UIColor blackColor].CGColor;
+        button.layer.borderWidth = 1.0;
+        button.layer.cornerRadius = 10;
+    }
+    NSArray *sounds = @[kick1, kick2, kick3, kick4, hihat1, hihat2, hihat3, hihat4, snare1, snare2, snap1, snap2, clap1, clap2, openhat1, openhat2, bassdrum1, triangle1];
+
+    actionSheet = [UIAlertController alertControllerWithTitle:@"Sounds" message:@"" preferredStyle:UIAlertControllerStyleActionSheet];
+    
+    [actionSheet addAction:[UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+        
+        // Cancel button tappped.
+        [self dismissViewControllerAnimated:YES completion:^{
+        }];
+    }]];
+    
+    for (NSString *sound in sounds){
+        UIAlertAction *action = [UIAlertAction actionWithTitle:sound style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            selectedSound = action.title;
+            if (channelIndex == 1){
+                channelOneSound = selectedSound;
+                
+            }
+            else if (channelIndex == 2){
+                channelTwoSound = selectedSound;
+            }
+            else if (channelIndex == 3){
+                channelThreeSound = selectedSound;
+            }
+            else if (channelIndex == 4){
+                channelFourSound = selectedSound;
+            }
+            [self setSounds];
+            
+            NSLog(@"Test");
+        }];
+        
+        // Let's also add a HOLD action - to play the sound 
+        
+        [actionSheet addAction:action];
+    }
+    
+    UITapGestureRecognizer *oneGesture =
+    [[UITapGestureRecognizer alloc] initWithTarget:self
+                                            action:@selector(didSelectOne)];
+    [self.kickView addGestureRecognizer:oneGesture];
+    
+    
+    UITapGestureRecognizer *twoGesture =
+    [[UITapGestureRecognizer alloc] initWithTarget:self
+                                            action:@selector(didSelectTwo)];
+    [self.snareView addGestureRecognizer:twoGesture];
+    
+    
+    UITapGestureRecognizer *threeGesture =
+    [[UITapGestureRecognizer alloc] initWithTarget:self
+                                            action:@selector(didSelectThree)];
+    [self.hiHatView addGestureRecognizer:threeGesture];
+    
+    
+    UITapGestureRecognizer *fourGesture =
+    [[UITapGestureRecognizer alloc] initWithTarget:self
+                                            action:@selector(didSelectFour)];
+    [self.openHatView addGestureRecognizer:fourGesture];
+    
+    
+    [self setSounds];
+}
+
+
+-(void)setSounds {
     BBGroove *groove = [BBGroove groove];
-    groove.tempo = 120;
+    groove.tempo = tempo_;
     groove.beats = 4;
     groove.beatUnit = BBGrooverBeatQuarter;
     
-    BBVoice *bass = [BBVoice voiceWithSubdivision:BBGrooverBeatSixteenth];
-    bass.name = @"Bass Drum";
-    bass.audioPath = @"kick.wav";
+    BBVoice *channel1 = [BBVoice voiceWithSubdivision:BBGrooverBeatSixteenth];
+    channel1.name = channelOneSound;
+    self.kickLabel.text = channelOneSound;
+    channel1.audioPath = [self sound:channelOneSound];
     
-    BBVoice *snare = [BBVoice voiceWithSubdivision:BBGrooverBeatSixteenth];
-    snare.name = @"Snare drum";
-    snare.audioPath = @"snare.wav";
+    BBVoice *channel2 = [BBVoice voiceWithSubdivision:BBGrooverBeatSixteenth];
+    channel2.name = channelTwoSound;
+    self.snareLabel.text = channelTwoSound;
+    channel2.audioPath = [self sound:channelTwoSound];
     
-    BBVoice *hihat = [BBVoice voiceWithSubdivision:BBGrooverBeatSixteenth];
-    hihat.name = @"Hi Hat";
-    hihat.audioPath = @"hihat.wav";
+    BBVoice *channel3 = [BBVoice voiceWithSubdivision:BBGrooverBeatSixteenth];
+    channel3.name = channelThreeSound;
+    self.hiHatLabel.text = channelThreeSound;
+    channel3.audioPath = [self sound:channelThreeSound];
     
-    BBVoice *kick = [BBVoice voiceWithSubdivision:BBGrooverBeatSixteenth];
-    kick.name = @"Kick";
-    kick.audioPath = @"clap.wav";
-
+    BBVoice *channel4 = [BBVoice voiceWithSubdivision:BBGrooverBeatSixteenth];
+    channel4.name = channelFourSound;
+    self.openHatsLabel.text = channelFourSound;
+    channel4.audioPath = [self sound:channelFourSound];
     
-    groove.voices = @[bass, snare, hihat, kick];
+    
+    groove.voices = @[channel1, channel2, channel3, channel4];
     
     _groover = [BBGroover grooverWithGroove:groove];
     
@@ -53,61 +199,46 @@
     
     self.tempoSlider.value = groove.tempo;
     [self updateTempo:groove.tempo];
-    
-    self.startButton.layer.borderColor = [UIColor blackColor].CGColor;
-    self.startButton.layer.borderWidth = 1.0;
-    self.startButton.layer.cornerRadius = 10;
-    
-    self.stopButton.layer.borderColor = [UIColor blackColor].CGColor;
-    self.stopButton.layer.borderWidth = 1.0;
-    self.stopButton.layer.cornerRadius = 10;
-    
-    self.clearButton.layer.borderColor = [UIColor blackColor].CGColor;
-    self.clearButton.layer.borderWidth = 1.0;
-    self.clearButton.layer.cornerRadius = 10;
-
 }
 
-// TRY TO LOAD NEW SOUNDS
--(void)newSounds {
-    BBGroove *groove = [BBGroove groove];
-    groove.tempo = 120;
-    groove.beats = 4;
-    groove.beatUnit = BBGrooverBeatQuarter;
-    
-    BBVoice *bass = [BBVoice voiceWithSubdivision:BBGrooverBeatSixteenth];
-    bass.name = @"Bass Drum";
-    bass.audioPath = @"kick.wav";
-    
-    BBVoice *snare = [BBVoice voiceWithSubdivision:BBGrooverBeatSixteenth];
-    snare.name = @"Snare drum";
-    snare.audioPath = @"snare.wav";
-    
-    BBVoice *hihat = [BBVoice voiceWithSubdivision:BBGrooverBeatSixteenth];
-    hihat.name = @"Hi Hat";
-    hihat.audioPath = @"hihat.wav";
-    
-    BBVoice *kick = [BBVoice voiceWithSubdivision:BBGrooverBeatSixteenth];
-    kick.name = @"Kick";
-    kick.audioPath = @"clap.wav";
-    
-    
-    groove.voices = @[bass, snare, hihat, kick];
-    
-    _groover = [BBGroover grooverWithGroove:groove];
-    
-    _groover.delegate = self;
-    
-    for (BBVoice *voice in groove.voices) {
-        [[OALSimpleAudio sharedInstance] preloadEffect:voice.audioPath];
-    }
+
+- (void)didSelectOne{
+    channelIndex = 1;
+    [self presentActionSheet];
 }
+
+
+- (void)didSelectTwo{
+    channelIndex = 2;
+    [self presentActionSheet];
+}
+
+
+- (void)didSelectThree{
+    channelIndex = 3;
+    [self presentActionSheet];
+}
+
+
+- (void)didSelectFour{
+    [self stopTapped:nil];
+    channelIndex = 4;
+    [self presentActionSheet];
+}
+
+
+- (void)presentActionSheet{
+    [self presentViewController:actionSheet animated:YES completion:nil];
+    [self clearTapped:nil];
+}
+
 
 #pragma mark BBGrooverDelegate Methods
 - (void) groover:(BBGroover *)sequencer didTick:(NSUInteger)tick {
     _tickView.currentTick = tick;
     [_tickView setNeedsLayout];
 }
+
 
 - (void) groover:(BBGroover *)sequencer voicesDidTick:(NSArray *)voices {
     for (BBVoice *voice in voices) {
@@ -121,14 +252,17 @@
     return [_groover currentSubdivision];
 }
 
+
 #pragma mark GridView Methods
 - (NSUInteger) gridView:(GridView *)gridView columnsForRow:(NSUInteger)row {
     return [_groover.groove.voices[row] subdivision];
 }
 
+
 - (NSUInteger) rowsForGridView:(GridView *)gridView {
     return _groover.groove.voices.count;
 }
+
 
 - (void) gridView:(GridView *)gridView wasSelectedAtRow:(NSUInteger)row column:(NSUInteger)column {
     BBVoice *voice = _groover.groove.voices[row];
@@ -142,19 +276,18 @@
     [gridView setNeedsDisplay];
 }
 
+
 - (BOOL) gridView:(GridView *)gridView isSelectedAtRow:(NSUInteger)row column:(NSUInteger)column {
     return [[_groover.groove.voices[row] values][column] boolValue];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 #pragma mark Helper Methods
 - (void) updateTempo:(NSUInteger)tempo {
+    tempo_ = tempo;
     _tempoLabel.text = [NSString stringWithFormat:@"%lu bpm", (unsigned long)tempo];
 }
+
 
 #pragma mark IBActions
 - (IBAction)sliderChanged:(id)sender {
@@ -166,13 +299,16 @@
     
 }
 
+
 - (IBAction)startTapped:(id)sender {
     [_groover resumeGrooving];
 }
 
+
 - (IBAction)stopTapped:(id)sender {
     [_groover pauseGrooving];
 }
+
 
 - (IBAction)clearTapped:(id)sender {
     [_groover pauseGrooving];
@@ -185,45 +321,33 @@
     [self.view removeFromSuperview];
     self.view = nil; // unloads the view
     [parent addSubview:self.view];
-
 }
+
 
 -(IBAction)stepsSelected:(id)sender {
     
     [_groover pauseGrooving];
-    /*
-    UIView *parent = self.view.superview;
-    [self.view removeFromSuperview];
-    self.view = nil; // unloads the view
-    [parent addSubview:self.view];
-    
-    BBVoice *bass = [BBVoice voiceWithSubdivision:BBGrooverBeatQuarter];
-    bass.name = @"Bass Drum";
-    bass.audioPath = @"bassdrum.wav";
-    
-    BBVoice *snare = [BBVoice voiceWithSubdivision:BBGrooverBeatQuarter];
-    snare.name = @"Snare drum";
-    snare.audioPath = @"snare2.wav";
-    
-    BBVoice *hihat = [BBVoice voiceWithSubdivision:BBGrooverBeatQuarter];
-    hihat.name = @"Hi Hat";
-    hihat.audioPath = @"hihat.wav";
-    
-    BBVoice *kick = [BBVoice voiceWithSubdivision:BBGrooverBeatQuarter];
-    kick.name = @"Kick";
-    kick.audioPath = @"kick.wav";
-    
-    BBGroove *groove = [BBGroove groove];
-
-    groove.voices = @[bass, snare, hihat, kick];
-    
-    _groover = [BBGroover grooverWithGroove:groove];
-    _groover.delegate = self;
-
-    for (BBVoice *voice in groove.voices) {
-        [[OALSimpleAudio sharedInstance] preloadEffect:voice.audioPath];
-    }
-     */
 }
+
+#pragma mark Utility Functions
+
+- (void) makeRounded:(CALayer *)layer color:(UIColor *)color borderWidth:(float)borderWidth cornerRadius:(float)cornerRadius{
+    //TODO - Move to Utility Function File
+    layer.cornerRadius = cornerRadius;
+    layer.borderWidth = borderWidth;
+    if (color != nil){
+        layer.borderColor = color.CGColor;
+    }
+    else {
+        layer.borderColor = [UIColor clearColor].CGColor;
+        
+    }
+}
+
+
+- (NSString *)sound:(NSString *)string{
+    return [NSString stringWithFormat:@"%@.wav", string];
+}
+
 
 @end

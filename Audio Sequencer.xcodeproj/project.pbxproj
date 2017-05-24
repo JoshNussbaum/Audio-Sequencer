@@ -18,30 +18,26 @@
 		030A8D1D1AA4516A00107112 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 030A8D131AA4516A00107112 /* Icon@2x.png */; };
 		030A8D1E1AA4516A00107112 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 030A8D141AA4516A00107112 /* iTunesArtwork.png */; };
 		030A8D1F1AA4516A00107112 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 030A8D151AA4516A00107112 /* iTunesArtwork@2x.png */; };
+		0327D72B1ED567CF00A639C7 /* Clap 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0327D7201ED567CF00A639C7 /* Clap 1.wav */; };
+		0327D72C1ED567CF00A639C7 /* Hi Hat 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0327D7211ED567CF00A639C7 /* Hi Hat 1.wav */; };
+		0327D72D1ED567CF00A639C7 /* Hi Hat 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0327D7221ED567CF00A639C7 /* Hi Hat 2.wav */; };
+		0327D72E1ED567CF00A639C7 /* Kick 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0327D7231ED567CF00A639C7 /* Kick 1.wav */; };
+		0327D72F1ED567CF00A639C7 /* Kick 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0327D7241ED567CF00A639C7 /* Kick 2.wav */; };
+		0327D7301ED567CF00A639C7 /* Kick 3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0327D7251ED567CF00A639C7 /* Kick 3.wav */; };
+		0327D7311ED567CF00A639C7 /* Kick 4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0327D7261ED567CF00A639C7 /* Kick 4.wav */; };
+		0327D7321ED567CF00A639C7 /* Open Hat 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0327D7271ED567CF00A639C7 /* Open Hat 1.wav */; };
+		0327D7331ED567CF00A639C7 /* Snap 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0327D7281ED567CF00A639C7 /* Snap 1.wav */; };
+		0327D7341ED567CF00A639C7 /* Snare 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0327D7291ED567CF00A639C7 /* Snare 1.wav */; };
+		0327D7351ED567CF00A639C7 /* Snare 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0327D72A1ED567CF00A639C7 /* Snare 2.wav */; };
 		03410E171ABCD28B00216DEB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03410E161ABCD28B00216DEB /* Images.xcassets */; };
-		03575CA91AAF732200CEC16E /* clap.wav in Resources */ = {isa = PBXBuildFile; fileRef = 03575CA51AAF732200CEC16E /* clap.wav */; };
-		03575CAA1AAF732200CEC16E /* hihat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 03575CA61AAF732200CEC16E /* hihat.wav */; };
-		03575CAB1AAF732200CEC16E /* kick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 03575CA71AAF732200CEC16E /* kick.wav */; };
-		03575CAC1AAF732200CEC16E /* snare.wav in Resources */ = {isa = PBXBuildFile; fileRef = 03575CA81AAF732200CEC16E /* snare.wav */; };
 		03874A631AA32B6900B4D50E /* GridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03874A621AA32B6900B4D50E /* GridView.m */; };
 		03DE75A61AA04F4400E11176 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DE75A51AA04F4400E11176 /* main.m */; };
 		03DE75A91AA04F4400E11176 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DE75A81AA04F4400E11176 /* AppDelegate.m */; };
 		03DE75AC1AA04F4400E11176 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DE75AB1AA04F4400E11176 /* ViewController.m */; };
 		03DE75AF1AA04F4400E11176 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03DE75AD1AA04F4400E11176 /* Main.storyboard */; };
 		03DE75B41AA04F4400E11176 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03DE75B21AA04F4400E11176 /* LaunchScreen.xib */; };
-		03DE75C01AA04F4400E11176 /* Audio_SequencerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DE75BF1AA04F4400E11176 /* Audio_SequencerTests.m */; };
-		E1313C13DFA9EB31F4CEA9EC /* libPods-Audio Sequencer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 404DDAE25AB13A575D8E2F71 /* libPods-Audio Sequencer.a */; };
+		850191F3C1551DE269A2370C /* libPods-Audio Sequencer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D505B354CDBC6B93D8F590B7 /* libPods-Audio Sequencer.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		03DE75BA1AA04F4400E11176 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 03DE75981AA04F4400E11176 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 03DE759F1AA04F4400E11176;
-			remoteInfo = "Audio Sequencer";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0309E8E21AA330340072AC08 /* TimerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerView.h; sourceTree = "<group>"; };
@@ -56,11 +52,18 @@
 		030A8D131AA4516A00107112 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Icons/Icon@2x.png"; sourceTree = SOURCE_ROOT; };
 		030A8D141AA4516A00107112 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iTunesArtwork.png; path = Icons/iTunesArtwork.png; sourceTree = SOURCE_ROOT; };
 		030A8D151AA4516A00107112 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iTunesArtwork@2x.png"; path = "Icons/iTunesArtwork@2x.png"; sourceTree = SOURCE_ROOT; };
+		0327D7201ED567CF00A639C7 /* Clap 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Clap 1.wav"; path = "Sounds/Clap 1.wav"; sourceTree = SOURCE_ROOT; };
+		0327D7211ED567CF00A639C7 /* Hi Hat 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Hi Hat 1.wav"; path = "Sounds/Hi Hat 1.wav"; sourceTree = SOURCE_ROOT; };
+		0327D7221ED567CF00A639C7 /* Hi Hat 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Hi Hat 2.wav"; path = "Sounds/Hi Hat 2.wav"; sourceTree = SOURCE_ROOT; };
+		0327D7231ED567CF00A639C7 /* Kick 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Kick 1.wav"; path = "Sounds/Kick 1.wav"; sourceTree = SOURCE_ROOT; };
+		0327D7241ED567CF00A639C7 /* Kick 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Kick 2.wav"; path = "Sounds/Kick 2.wav"; sourceTree = SOURCE_ROOT; };
+		0327D7251ED567CF00A639C7 /* Kick 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Kick 3.wav"; path = "Sounds/Kick 3.wav"; sourceTree = SOURCE_ROOT; };
+		0327D7261ED567CF00A639C7 /* Kick 4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Kick 4.wav"; path = "Sounds/Kick 4.wav"; sourceTree = SOURCE_ROOT; };
+		0327D7271ED567CF00A639C7 /* Open Hat 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Open Hat 1.wav"; path = "Sounds/Open Hat 1.wav"; sourceTree = SOURCE_ROOT; };
+		0327D7281ED567CF00A639C7 /* Snap 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Snap 1.wav"; path = "Sounds/Snap 1.wav"; sourceTree = SOURCE_ROOT; };
+		0327D7291ED567CF00A639C7 /* Snare 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Snare 1.wav"; path = "Sounds/Snare 1.wav"; sourceTree = SOURCE_ROOT; };
+		0327D72A1ED567CF00A639C7 /* Snare 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Snare 2.wav"; path = "Sounds/Snare 2.wav"; sourceTree = SOURCE_ROOT; };
 		03410E161ABCD28B00216DEB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		03575CA51AAF732200CEC16E /* clap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = clap.wav; path = Sounds/clap.wav; sourceTree = SOURCE_ROOT; };
-		03575CA61AAF732200CEC16E /* hihat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = hihat.wav; path = Sounds/hihat.wav; sourceTree = SOURCE_ROOT; };
-		03575CA71AAF732200CEC16E /* kick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = kick.wav; path = Sounds/kick.wav; sourceTree = SOURCE_ROOT; };
-		03575CA81AAF732200CEC16E /* snare.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = snare.wav; path = Sounds/snare.wav; sourceTree = SOURCE_ROOT; };
 		03874A611AA32B6900B4D50E /* GridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GridView.h; path = ../GridView.h; sourceTree = "<group>"; };
 		03874A621AA32B6900B4D50E /* GridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GridView.m; path = ../GridView.m; sourceTree = "<group>"; };
 		03DE75A01AA04F4400E11176 /* Audio Fuego.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Audio Fuego.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,12 +75,14 @@
 		03DE75AB1AA04F4400E11176 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		03DE75AE1AA04F4400E11176 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03DE75B31AA04F4400E11176 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		03DE75B91AA04F4400E11176 /* Audio SequencerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Audio SequencerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03DE75BE1AA04F4400E11176 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03DE75BF1AA04F4400E11176 /* Audio_SequencerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Audio_SequencerTests.m; sourceTree = "<group>"; };
-		404DDAE25AB13A575D8E2F71 /* libPods-Audio Sequencer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Audio Sequencer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BBCCE2E9A0EE64C3B43483C8 /* Pods-Audio Sequencer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audio Sequencer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Audio Sequencer/Pods-Audio Sequencer.release.xcconfig"; sourceTree = "<group>"; };
-		D82D3C8EFE9A8A4CB00C0DA9 /* Pods-Audio Sequencer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audio Sequencer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Audio Sequencer/Pods-Audio Sequencer.debug.xcconfig"; sourceTree = "<group>"; };
+		06F7CF0570439D00BED43784 /* Pods-Audio SequencerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audio SequencerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Audio SequencerTests/Pods-Audio SequencerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4CB2EB52ADA5DCBD70780484 /* Pods-Audio Sequencer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audio Sequencer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Audio Sequencer/Pods-Audio Sequencer.debug.xcconfig"; sourceTree = "<group>"; };
+		6F13FDD79E3EE351648ED035 /* libPods-Audio SequencerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Audio SequencerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A36F9A7BD44B5D17EECBD1C /* Pods-Audio SequencerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audio SequencerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Audio SequencerTests/Pods-Audio SequencerTests.release.xcconfig"; sourceTree = "<group>"; };
+		D505B354CDBC6B93D8F590B7 /* libPods-Audio Sequencer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Audio Sequencer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E38F3CBB533B55EFB8A4BEBC /* Pods-Audio Sequencer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audio Sequencer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Audio Sequencer/Pods-Audio Sequencer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,28 +90,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1313C13DFA9EB31F4CEA9EC /* libPods-Audio Sequencer.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		03DE75B61AA04F4400E11176 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				850191F3C1551DE269A2370C /* libPods-Audio Sequencer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0327D7361ED567D500A639C7 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				0327D7201ED567CF00A639C7 /* Clap 1.wav */,
+				0327D7211ED567CF00A639C7 /* Hi Hat 1.wav */,
+				0327D7221ED567CF00A639C7 /* Hi Hat 2.wav */,
+				0327D7231ED567CF00A639C7 /* Kick 1.wav */,
+				0327D7241ED567CF00A639C7 /* Kick 2.wav */,
+				0327D7251ED567CF00A639C7 /* Kick 3.wav */,
+				0327D7261ED567CF00A639C7 /* Kick 4.wav */,
+				0327D7271ED567CF00A639C7 /* Open Hat 1.wav */,
+				0327D7281ED567CF00A639C7 /* Snap 1.wav */,
+				0327D7291ED567CF00A639C7 /* Snare 1.wav */,
+				0327D72A1ED567CF00A639C7 /* Snare 2.wav */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
 		03DE75971AA04F4400E11176 = {
 			isa = PBXGroup;
 			children = (
 				03DE75A21AA04F4400E11176 /* Audio Sequencer */,
 				03DE75BC1AA04F4400E11176 /* Audio SequencerTests */,
 				03DE75A11AA04F4400E11176 /* Products */,
-				A4351652D76F8319CB97629D /* Pods */,
-				0C83B66A4C50720258DCAB48 /* Frameworks */,
+				3F3EC25D4BB0E9DD0585D7F1 /* Pods */,
+				9DB6546A4579A9BA5859881A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,7 +130,6 @@
 			isa = PBXGroup;
 			children = (
 				03DE75A01AA04F4400E11176 /* Audio Fuego.app */,
-				03DE75B91AA04F4400E11176 /* Audio SequencerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -141,10 +156,7 @@
 		03DE75A31AA04F4400E11176 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				03575CA51AAF732200CEC16E /* clap.wav */,
-				03575CA61AAF732200CEC16E /* hihat.wav */,
-				03575CA71AAF732200CEC16E /* kick.wav */,
-				03575CA81AAF732200CEC16E /* snare.wav */,
+				0327D7361ED567D500A639C7 /* Sounds */,
 				030A8D0C1AA4516A00107112 /* AppIcon.appiconset */,
 				030A8D0D1AA4516A00107112 /* Icon-60.png */,
 				030A8D0E1AA4516A00107112 /* Icon-72.png */,
@@ -178,21 +190,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0C83B66A4C50720258DCAB48 /* Frameworks */ = {
+		3F3EC25D4BB0E9DD0585D7F1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				404DDAE25AB13A575D8E2F71 /* libPods-Audio Sequencer.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A4351652D76F8319CB97629D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D82D3C8EFE9A8A4CB00C0DA9 /* Pods-Audio Sequencer.debug.xcconfig */,
-				BBCCE2E9A0EE64C3B43483C8 /* Pods-Audio Sequencer.release.xcconfig */,
+				4CB2EB52ADA5DCBD70780484 /* Pods-Audio Sequencer.debug.xcconfig */,
+				E38F3CBB533B55EFB8A4BEBC /* Pods-Audio Sequencer.release.xcconfig */,
+				06F7CF0570439D00BED43784 /* Pods-Audio SequencerTests.debug.xcconfig */,
+				9A36F9A7BD44B5D17EECBD1C /* Pods-Audio SequencerTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		9DB6546A4579A9BA5859881A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D505B354CDBC6B93D8F590B7 /* libPods-Audio Sequencer.a */,
+				6F13FDD79E3EE351648ED035 /* libPods-Audio SequencerTests.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,11 +217,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03DE75C31AA04F4400E11176 /* Build configuration list for PBXNativeTarget "Audio Sequencer" */;
 			buildPhases = (
-				D324A6A2765A9A250BD765D9 /* Check Pods Manifest.lock */,
+				DF6270EE41B7BA800C62E367 /* [CP] Check Pods Manifest.lock */,
 				03DE759C1AA04F4400E11176 /* Sources */,
 				03DE759D1AA04F4400E11176 /* Frameworks */,
 				03DE759E1AA04F4400E11176 /* Resources */,
-				1134BC96F7A2D3A6F8A14483 /* Copy Pods Resources */,
+				059E2A40A5E717FE6105B7ED /* [CP] Embed Pods Frameworks */,
+				3E49989985E678BC64A194B9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -216,24 +232,6 @@
 			productName = "Audio Sequencer";
 			productReference = 03DE75A01AA04F4400E11176 /* Audio Fuego.app */;
 			productType = "com.apple.product-type.application";
-		};
-		03DE75B81AA04F4400E11176 /* Audio SequencerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 03DE75C61AA04F4400E11176 /* Build configuration list for PBXNativeTarget "Audio SequencerTests" */;
-			buildPhases = (
-				03DE75B51AA04F4400E11176 /* Sources */,
-				03DE75B61AA04F4400E11176 /* Frameworks */,
-				03DE75B71AA04F4400E11176 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				03DE75BB1AA04F4400E11176 /* PBXTargetDependency */,
-			);
-			name = "Audio SequencerTests";
-			productName = "Audio SequencerTests";
-			productReference = 03DE75B91AA04F4400E11176 /* Audio SequencerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -246,10 +244,8 @@
 				TargetAttributes = {
 					03DE759F1AA04F4400E11176 = {
 						CreatedOnToolsVersion = 6.1.1;
-					};
-					03DE75B81AA04F4400E11176 = {
-						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = 03DE759F1AA04F4400E11176;
+						DevelopmentTeam = B28Q4692N6;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -267,7 +263,6 @@
 			projectRoot = "";
 			targets = (
 				03DE759F1AA04F4400E11176 /* Audio Sequencer */,
-				03DE75B81AA04F4400E11176 /* Audio SequencerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -277,44 +272,59 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0327D7311ED567CF00A639C7 /* Kick 4.wav in Resources */,
+				0327D72E1ED567CF00A639C7 /* Kick 1.wav in Resources */,
 				030A8D171AA4516A00107112 /* Icon-60.png in Resources */,
+				0327D7331ED567CF00A639C7 /* Snap 1.wav in Resources */,
 				030A8D1E1AA4516A00107112 /* iTunesArtwork.png in Resources */,
 				030A8D1D1AA4516A00107112 /* Icon@2x.png in Resources */,
+				0327D72B1ED567CF00A639C7 /* Clap 1.wav in Resources */,
+				0327D72C1ED567CF00A639C7 /* Hi Hat 1.wav in Resources */,
 				03DE75AF1AA04F4400E11176 /* Main.storyboard in Resources */,
-				03575CA91AAF732200CEC16E /* clap.wav in Resources */,
 				030A8D1B1AA4516A00107112 /* Icon-Small-50@2x.png in Resources */,
-				03575CAB1AAF732200CEC16E /* kick.wav in Resources */,
+				0327D7351ED567CF00A639C7 /* Snare 2.wav in Resources */,
+				0327D7301ED567CF00A639C7 /* Kick 3.wav in Resources */,
+				0327D7341ED567CF00A639C7 /* Snare 1.wav in Resources */,
 				030A8D191AA4516A00107112 /* Icon-72@2x.png in Resources */,
+				0327D72D1ED567CF00A639C7 /* Hi Hat 2.wav in Resources */,
 				030A8D181AA4516A00107112 /* Icon-72.png in Resources */,
 				03DE75B41AA04F4400E11176 /* LaunchScreen.xib in Resources */,
-				03575CAC1AAF732200CEC16E /* snare.wav in Resources */,
 				03410E171ABCD28B00216DEB /* Images.xcassets in Resources */,
 				030A8D161AA4516A00107112 /* AppIcon.appiconset in Resources */,
+				0327D72F1ED567CF00A639C7 /* Kick 2.wav in Resources */,
 				030A8D1A1AA4516A00107112 /* Icon-Small-50.png in Resources */,
+				0327D7321ED567CF00A639C7 /* Open Hat 1.wav in Resources */,
 				030A8D1F1AA4516A00107112 /* iTunesArtwork@2x.png in Resources */,
-				03575CAA1AAF732200CEC16E /* hihat.wav in Resources */,
 				030A8D1C1AA4516A00107112 /* Icon.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		03DE75B71AA04F4400E11176 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1134BC96F7A2D3A6F8A14483 /* Copy Pods Resources */ = {
+		059E2A40A5E717FE6105B7ED /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Audio Sequencer/Pods-Audio Sequencer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E49989985E678BC64A194B9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,19 +332,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Audio Sequencer/Pods-Audio Sequencer-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D324A6A2765A9A250BD765D9 /* Check Pods Manifest.lock */ = {
+		DF6270EE41B7BA800C62E367 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -352,23 +362,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		03DE75B51AA04F4400E11176 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				03DE75C01AA04F4400E11176 /* Audio_SequencerTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		03DE75BB1AA04F4400E11176 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 03DE759F1AA04F4400E11176 /* Audio Sequencer */;
-			targetProxy = 03DE75BA1AA04F4400E11176 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		03DE75AD1AA04F4400E11176 /* Main.storyboard */ = {
@@ -470,67 +464,41 @@
 		};
 		03DE75C41AA04F4400E11176 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D82D3C8EFE9A8A4CB00C0DA9 /* Pods-Audio Sequencer.debug.xcconfig */;
+			baseConfigurationReference = 4CB2EB52ADA5DCBD70780484 /* Pods-Audio Sequencer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Josh  Nussbaum (B28Q4692N6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = B28Q4692N6;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Audio Sequencer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "Audio Fuego";
-				PROVISIONING_PROFILE = "6aca36a3-bcb5-4b6a-bc92-79f1490fdc15";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		03DE75C51AA04F4400E11176 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BBCCE2E9A0EE64C3B43483C8 /* Pods-Audio Sequencer.release.xcconfig */;
+			baseConfigurationReference = E38F3CBB533B55EFB8A4BEBC /* Pods-Audio Sequencer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Josh  Nussbaum (B28Q4692N6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = B28Q4692N6;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Audio Sequencer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "Audio Fuego";
-				PROVISIONING_PROFILE = "6aca36a3-bcb5-4b6a-bc92-79f1490fdc15";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
-		};
-		03DE75C71AA04F4400E11176 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Audio SequencerTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Audio Sequencer.app/Audio Sequencer";
-			};
-			name = Debug;
-		};
-		03DE75C81AA04F4400E11176 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Audio SequencerTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Audio Sequencer.app/Audio Sequencer";
 			};
 			name = Release;
 		};
@@ -551,15 +519,6 @@
 			buildConfigurations = (
 				03DE75C41AA04F4400E11176 /* Debug */,
 				03DE75C51AA04F4400E11176 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		03DE75C61AA04F4400E11176 /* Build configuration list for PBXNativeTarget "Audio SequencerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				03DE75C71AA04F4400E11176 /* Debug */,
-				03DE75C81AA04F4400E11176 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

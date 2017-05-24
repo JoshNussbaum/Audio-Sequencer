@@ -4,7 +4,6 @@
 target 'Audio Sequencer' do
 pod "BBGroover"
 pod "ObjectAL-for-iPhone"
-
 end
 
 target 'Audio SequencerTests' do
