@@ -36,6 +36,15 @@
 		03DE75AC1AA04F4400E11176 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DE75AB1AA04F4400E11176 /* ViewController.m */; };
 		03DE75AF1AA04F4400E11176 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03DE75AD1AA04F4400E11176 /* Main.storyboard */; };
 		03DE75B41AA04F4400E11176 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03DE75B21AA04F4400E11176 /* LaunchScreen.xib */; };
+		03F0A2AC1ED9607300897DBD /* Hi Hat 3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 03F0A2A31ED9607300897DBD /* Hi Hat 3.wav */; };
+		03F0A2AD1ED9607300897DBD /* Rim 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 03F0A2A41ED9607300897DBD /* Rim 1.wav */; };
+		03F0A2AE1ED9607300897DBD /* Rim 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 03F0A2A51ED9607300897DBD /* Rim 2.wav */; };
+		03F0A2AF1ED9607300897DBD /* Rim 3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 03F0A2A61ED9607300897DBD /* Rim 3.wav */; };
+		03F0A2B01ED9607300897DBD /* Shaker 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 03F0A2A71ED9607300897DBD /* Shaker 1.wav */; };
+		03F0A2B11ED9607300897DBD /* Shaker 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 03F0A2A81ED9607300897DBD /* Shaker 2.wav */; };
+		03F0A2B21ED9607300897DBD /* Snap 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 03F0A2A91ED9607300897DBD /* Snap 2.wav */; };
+		03F0A2B31ED9607300897DBD /* Triangle 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 03F0A2AA1ED9607300897DBD /* Triangle 1.wav */; };
+		03F0A2B41ED9607300897DBD /* Vox 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 03F0A2AB1ED9607300897DBD /* Vox 1.wav */; };
 		850191F3C1551DE269A2370C /* libPods-Audio Sequencer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D505B354CDBC6B93D8F590B7 /* libPods-Audio Sequencer.a */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +86,15 @@
 		03DE75B31AA04F4400E11176 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		03DE75BE1AA04F4400E11176 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03DE75BF1AA04F4400E11176 /* Audio_SequencerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Audio_SequencerTests.m; sourceTree = "<group>"; };
+		03F0A2A31ED9607300897DBD /* Hi Hat 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Hi Hat 3.wav"; path = "Sounds/Hi Hat 3.wav"; sourceTree = SOURCE_ROOT; };
+		03F0A2A41ED9607300897DBD /* Rim 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Rim 1.wav"; path = "Sounds/Rim 1.wav"; sourceTree = SOURCE_ROOT; };
+		03F0A2A51ED9607300897DBD /* Rim 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Rim 2.wav"; path = "Sounds/Rim 2.wav"; sourceTree = SOURCE_ROOT; };
+		03F0A2A61ED9607300897DBD /* Rim 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Rim 3.wav"; path = "Sounds/Rim 3.wav"; sourceTree = SOURCE_ROOT; };
+		03F0A2A71ED9607300897DBD /* Shaker 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Shaker 1.wav"; path = "Sounds/Shaker 1.wav"; sourceTree = SOURCE_ROOT; };
+		03F0A2A81ED9607300897DBD /* Shaker 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Shaker 2.wav"; path = "Sounds/Shaker 2.wav"; sourceTree = SOURCE_ROOT; };
+		03F0A2A91ED9607300897DBD /* Snap 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Snap 2.wav"; path = "Sounds/Snap 2.wav"; sourceTree = SOURCE_ROOT; };
+		03F0A2AA1ED9607300897DBD /* Triangle 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Triangle 1.wav"; path = "Sounds/Triangle 1.wav"; sourceTree = SOURCE_ROOT; };
+		03F0A2AB1ED9607300897DBD /* Vox 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Vox 1.wav"; path = "Sounds/Vox 1.wav"; sourceTree = SOURCE_ROOT; };
 		06F7CF0570439D00BED43784 /* Pods-Audio SequencerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audio SequencerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Audio SequencerTests/Pods-Audio SequencerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4CB2EB52ADA5DCBD70780484 /* Pods-Audio Sequencer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audio Sequencer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Audio Sequencer/Pods-Audio Sequencer.debug.xcconfig"; sourceTree = "<group>"; };
 		6F13FDD79E3EE351648ED035 /* libPods-Audio SequencerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Audio SequencerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,15 +118,24 @@
 		0327D7361ED567D500A639C7 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				03F0A2A41ED9607300897DBD /* Rim 1.wav */,
+				03F0A2A51ED9607300897DBD /* Rim 2.wav */,
+				03F0A2A61ED9607300897DBD /* Rim 3.wav */,
+				03F0A2A71ED9607300897DBD /* Shaker 1.wav */,
+				03F0A2A81ED9607300897DBD /* Shaker 2.wav */,
+				03F0A2AA1ED9607300897DBD /* Triangle 1.wav */,
+				03F0A2AB1ED9607300897DBD /* Vox 1.wav */,
 				0327D7201ED567CF00A639C7 /* Clap 1.wav */,
 				0327D7211ED567CF00A639C7 /* Hi Hat 1.wav */,
 				0327D7221ED567CF00A639C7 /* Hi Hat 2.wav */,
+				03F0A2A31ED9607300897DBD /* Hi Hat 3.wav */,
+				0327D7271ED567CF00A639C7 /* Open Hat 1.wav */,
 				0327D7231ED567CF00A639C7 /* Kick 1.wav */,
 				0327D7241ED567CF00A639C7 /* Kick 2.wav */,
 				0327D7251ED567CF00A639C7 /* Kick 3.wav */,
 				0327D7261ED567CF00A639C7 /* Kick 4.wav */,
-				0327D7271ED567CF00A639C7 /* Open Hat 1.wav */,
 				0327D7281ED567CF00A639C7 /* Snap 1.wav */,
+				03F0A2A91ED9607300897DBD /* Snap 2.wav */,
 				0327D7291ED567CF00A639C7 /* Snare 1.wav */,
 				0327D72A1ED567CF00A639C7 /* Snare 2.wav */,
 			);
@@ -272,7 +299,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03F0A2B11ED9607300897DBD /* Shaker 2.wav in Resources */,
 				0327D7311ED567CF00A639C7 /* Kick 4.wav in Resources */,
+				03F0A2B21ED9607300897DBD /* Snap 2.wav in Resources */,
 				0327D72E1ED567CF00A639C7 /* Kick 1.wav in Resources */,
 				030A8D171AA4516A00107112 /* Icon-60.png in Resources */,
 				0327D7331ED567CF00A639C7 /* Snap 1.wav in Resources */,
@@ -280,17 +309,24 @@
 				030A8D1D1AA4516A00107112 /* Icon@2x.png in Resources */,
 				0327D72B1ED567CF00A639C7 /* Clap 1.wav in Resources */,
 				0327D72C1ED567CF00A639C7 /* Hi Hat 1.wav in Resources */,
+				03F0A2AF1ED9607300897DBD /* Rim 3.wav in Resources */,
 				03DE75AF1AA04F4400E11176 /* Main.storyboard in Resources */,
 				030A8D1B1AA4516A00107112 /* Icon-Small-50@2x.png in Resources */,
 				0327D7351ED567CF00A639C7 /* Snare 2.wav in Resources */,
 				0327D7301ED567CF00A639C7 /* Kick 3.wav in Resources */,
 				0327D7341ED567CF00A639C7 /* Snare 1.wav in Resources */,
 				030A8D191AA4516A00107112 /* Icon-72@2x.png in Resources */,
+				03F0A2B31ED9607300897DBD /* Triangle 1.wav in Resources */,
+				03F0A2AD1ED9607300897DBD /* Rim 1.wav in Resources */,
+				03F0A2AC1ED9607300897DBD /* Hi Hat 3.wav in Resources */,
+				03F0A2B41ED9607300897DBD /* Vox 1.wav in Resources */,
 				0327D72D1ED567CF00A639C7 /* Hi Hat 2.wav in Resources */,
+				03F0A2AE1ED9607300897DBD /* Rim 2.wav in Resources */,
 				030A8D181AA4516A00107112 /* Icon-72.png in Resources */,
 				03DE75B41AA04F4400E11176 /* LaunchScreen.xib in Resources */,
 				03410E171ABCD28B00216DEB /* Images.xcassets in Resources */,
 				030A8D161AA4516A00107112 /* AppIcon.appiconset in Resources */,
+				03F0A2B01ED9607300897DBD /* Shaker 1.wav in Resources */,
 				0327D72F1ED567CF00A639C7 /* Kick 2.wav in Resources */,
 				030A8D1A1AA4516A00107112 /* Icon-Small-50.png in Resources */,
 				0327D7321ED567CF00A639C7 /* Open Hat 1.wav in Resources */,

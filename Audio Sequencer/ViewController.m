@@ -19,8 +19,16 @@ static NSString *kick4 = @"Kick 4";
 
 static NSString *hihat1 = @"Hi Hat 1";
 static NSString *hihat2 = @"Hi Hat 2";
-static NSString *hihat3= @"Hi Hat 3";
+static NSString *hihat3 = @"Hi Hat 3";
 static NSString *hihat4 = @"Hi Hat 4";
+
+static NSString *rim1 = @"Rim 1";
+static NSString *rim2 = @"Rim 2";
+static NSString *rim3 = @"Rim 3";
+
+static NSString *shaker1 = @"Shaker 1";
+static NSString *shaker2 = @"Shaker 2";
+
 
 
 static NSString *snare1 = @"Snare 1";
@@ -36,11 +44,9 @@ static NSString *clap2 = @"Clap 2";
 
 
 static NSString *openhat1 = @"Open Hat 1";
-static NSString *openhat2 = @"Open Hat 2";
-
-static NSString *bassdrum1 = @"Bass Drum 1";
 
 static NSString *triangle1 = @"Triangle 1";
+static NSString *vox1 = @"Vox 1";
 
 
 
@@ -50,7 +56,7 @@ static NSString *triangle1 = @"Triangle 1";
 @interface ViewController (){
     UIAlertController *actionSheet;
     
-    
+    GridView *gv;
     NSInteger channelIndex;
     NSString *selectedSound;
     
@@ -59,21 +65,25 @@ static NSString *triangle1 = @"Triangle 1";
     NSString *channelThreeSound;
     NSString *channelFourSound;
     
+    NSMutableArray *channelOneSelections;
+    NSMutableArray *channelTwoSelections;
+    NSMutableArray *channelThreeSelections;
+    NSMutableArray *channelFourSelections;
+    
     NSInteger tempo_;
     
     BOOL loaded;
-    
+    BOOL grooving;
 }
 
 @end
 
 @implementation ViewController
 
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     if (!loaded){
+        grooving = NO;
         loaded = YES;
         channelIndex = 0;
         tempo_ = 120;
@@ -83,7 +93,12 @@ static NSString *triangle1 = @"Triangle 1";
         channelFourSound = openhat1;
     }
     NSArray *views = @[self.snareView, self.kickView, self.hiHatView, self.openHatView];
-    NSArray *buttons = @[self.startButton, self.stopButton, self.clearButton];
+    NSArray *buttons = @[self.startButton, self.recordButton, self.clearButton];
+    
+    channelOneSelections = [[NSMutableArray alloc]init];
+    channelTwoSelections = [[NSMutableArray alloc]init];
+    channelThreeSelections = [[NSMutableArray alloc]init];
+    channelFourSelections = [[NSMutableArray alloc]init];
     
     for (UIView *view in views){
         [self makeRounded:view.layer color:[UIColor blackColor] borderWidth:0.1f cornerRadius:3.0f];
@@ -95,10 +110,9 @@ static NSString *triangle1 = @"Triangle 1";
         button.layer.borderWidth = 1.0;
         button.layer.cornerRadius = 10;
     }
-    NSArray *sounds = @[kick1, kick2, kick3, kick4, hihat1, hihat2, hihat3, hihat4, snare1, snare2, snap1, snap2, clap1, clap2, openhat1, openhat2, bassdrum1, triangle1];
+    NSArray *sounds = @[kick1, kick2, kick3, kick4, hihat1, hihat2, hihat3, hihat4, snare1, snare2, snap1, snap2, clap1, clap2, openhat1, triangle1, rim1, rim2, rim3, shaker1, shaker2, vox1];
 
-    actionSheet = [UIAlertController alertControllerWithTitle:@"Sounds" message:@"" preferredStyle:UIAlertControllerStyleActionSheet];
-    
+    actionSheet = [UIAlertController alertControllerWithTitle:@"Swap sound" message:@"" preferredStyle:UIAlertControllerStyleActionSheet];
     [actionSheet addAction:[UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
         
         // Cancel button tappped.
@@ -107,6 +121,7 @@ static NSString *triangle1 = @"Triangle 1";
     }]];
     
     for (NSString *sound in sounds){
+        
         UIAlertAction *action = [UIAlertAction actionWithTitle:sound style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             selectedSound = action.title;
             if (channelIndex == 1){
@@ -122,13 +137,13 @@ static NSString *triangle1 = @"Triangle 1";
             else if (channelIndex == 4){
                 channelFourSound = selectedSound;
             }
+            [self clearVoices];
             [self setSounds];
+            //[self clearTapped:nil];
             
             NSLog(@"Test");
         }];
-        
-        // Let's also add a HOLD action - to play the sound 
-        
+    
         [actionSheet addAction:action];
     }
     
@@ -160,34 +175,49 @@ static NSString *triangle1 = @"Triangle 1";
 }
 
 
--(void)setSounds {
+- (void)setSounds {
     BBGroove *groove = [BBGroove groove];
     groove.tempo = tempo_;
     groove.beats = 4;
-    groove.beatUnit = BBGrooverBeatQuarter;
+    groove.beatUnit = BBGrooverBeatMin;
     
-    BBVoice *channel1 = [BBVoice voiceWithSubdivision:BBGrooverBeatSixteenth];
+    BBVoice *channel1 = [BBVoice voiceWithSubdivision:BBGrooverBeatThirtySecond];
     channel1.name = channelOneSound;
     self.kickLabel.text = channelOneSound;
     channel1.audioPath = [self sound:channelOneSound];
     
-    BBVoice *channel2 = [BBVoice voiceWithSubdivision:BBGrooverBeatSixteenth];
+    BBVoice *channel2 = [BBVoice voiceWithSubdivision:BBGrooverBeatThirtySecond];
     channel2.name = channelTwoSound;
     self.snareLabel.text = channelTwoSound;
     channel2.audioPath = [self sound:channelTwoSound];
     
-    BBVoice *channel3 = [BBVoice voiceWithSubdivision:BBGrooverBeatSixteenth];
+    BBVoice *channel3 = [BBVoice voiceWithSubdivision:BBGrooverBeatThirtySecond];
     channel3.name = channelThreeSound;
     self.hiHatLabel.text = channelThreeSound;
     channel3.audioPath = [self sound:channelThreeSound];
     
-    BBVoice *channel4 = [BBVoice voiceWithSubdivision:BBGrooverBeatSixteenth];
+    BBVoice *channel4 = [BBVoice voiceWithSubdivision:BBGrooverBeatThirtySecond];
     channel4.name = channelFourSound;
     self.openHatsLabel.text = channelFourSound;
     channel4.audioPath = [self sound:channelFourSound];
     
     
     groove.voices = @[channel1, channel2, channel3, channel4];
+    
+    NSInteger index = 0;
+    
+    
+    NSArray *channelSelections = @[channelOneSelections, channelTwoSelections, channelThreeSelections, channelFourSelections];
+    
+    for (NSMutableArray *chanSelections in channelSelections){
+        BBVoice *voice = [groove.voices objectAtIndex:index];
+        
+        for (NSNumber *num in chanSelections){
+            [voice setValue:YES forIndex:num.integerValue];
+        }
+        index++;
+    }
+    
     
     _groover = [BBGroover grooverWithGroove:groove];
     
@@ -204,34 +234,40 @@ static NSString *triangle1 = @"Triangle 1";
 
 - (void)didSelectOne{
     channelIndex = 1;
+    [actionSheet setMessage:@"Select a sound for channel 1"];
     [self presentActionSheet];
 }
 
 
 - (void)didSelectTwo{
     channelIndex = 2;
+    [actionSheet setMessage:@"Select a sound for channel 2"];
     [self presentActionSheet];
 }
 
 
 - (void)didSelectThree{
     channelIndex = 3;
+    [actionSheet setMessage:@"Select a sound for channel 3"];
     [self presentActionSheet];
 }
 
 
 - (void)didSelectFour{
-    [self stopTapped:nil];
     channelIndex = 4;
+    [actionSheet setMessage:@"Select a sound for channel 4"];
     [self presentActionSheet];
 }
 
 
 - (void)presentActionSheet{
-    [self presentViewController:actionSheet animated:YES completion:nil];
-    [self clearTapped:nil];
-}
+    grooving = YES;
+    [self startTapped:nil];
 
+    [self presentViewController:actionSheet animated:YES completion:nil];
+
+
+}
 
 #pragma mark BBGrooverDelegate Methods
 - (void) groover:(BBGroover *)sequencer didTick:(NSUInteger)tick {
@@ -265,12 +301,32 @@ static NSString *triangle1 = @"Triangle 1";
 
 
 - (void) gridView:(GridView *)gridView wasSelectedAtRow:(NSUInteger)row column:(NSUInteger)column {
+    gv = gridView;
+    // keep reference so we can when we set new sounds also maintain the selections
     BBVoice *voice = _groover.groove.voices[row];
+    
+    NSMutableArray *tmpArray;
+    
+    if (row == 0){
+        tmpArray = channelOneSelections;
+    }
+    else if (row == 1){
+        tmpArray = channelTwoSelections;
+    }
+    else if (row == 2){
+        tmpArray = channelThreeSelections;
+    }
+    else if (row == 3){
+        tmpArray = channelFourSelections;
+    }
     
     if ([voice.values[column] boolValue]) {
         [voice setValue:NO forIndex:column];
+        [tmpArray removeObject:[NSNumber numberWithUnsignedInteger:column]];
+
     } else {
         [voice setValue:YES forIndex:column];
+        [tmpArray addObject:[NSNumber numberWithUnsignedInteger:column]];
     }
     
     [gridView setNeedsDisplay];
@@ -301,12 +357,28 @@ static NSString *triangle1 = @"Triangle 1";
 
 
 - (IBAction)startTapped:(id)sender {
-    [_groover resumeGrooving];
+    if (!grooving){
+        grooving = YES;
+        
+        // disable updating button
+        [self.startButton setTitle:@" Stop " forState:UIControlStateNormal];
+
+        [_groover resumeGrooving];
+    }
+    else{
+        grooving = NO;
+        [self.startButton setTitle:@" Start " forState:UIControlStateNormal];
+        [_groover pauseGrooving];
+    }
 }
 
 
-- (IBAction)stopTapped:(id)sender {
-    [_groover pauseGrooving];
+- (void)clearVoices{
+    for (BBVoice *voice in self.groover.groove.voices) {
+        for (int i = 0; i < 15; i++){
+            [voice setValue:NO forIndex:i];
+        }
+    }
 }
 
 
@@ -321,6 +393,11 @@ static NSString *triangle1 = @"Triangle 1";
     [self.view removeFromSuperview];
     self.view = nil; // unloads the view
     [parent addSubview:self.view];
+}
+
+
+- (IBAction)recordSelected:(id)sender {
+    
 }
 
 
@@ -350,4 +427,9 @@ static NSString *triangle1 = @"Triangle 1";
 }
 
 
+- (IBAction)backgroundTap:(id)sender {
+    if (actionSheet.isFirstResponder){
+        [actionSheet dismissViewControllerAnimated:YES completion:nil];
+    }
+}
 @end
