@@ -15,10 +15,10 @@
 @interface ViewController : UIViewController <BBGrooverDelegate, GridViewDelegate, TimerViewDelegate>
 @property (strong, nonatomic) IBOutlet UIButton *startButton;
 @property (strong, nonatomic) IBOutlet UIButton *clearButton;
-@property (strong, nonatomic) IBOutlet UIButton *recordButton;
 
 @property (nonatomic, strong) BBGroover *groover;
 @property (strong, nonatomic) IBOutlet UISlider *tempoSlider;
+@property (strong, nonatomic) IBOutlet UIButton *beatsButton;
 
 @property (strong, nonatomic) IBOutlet TimerView *tickView;
 @property (strong, nonatomic) IBOutlet UILabel *tempoLabel;

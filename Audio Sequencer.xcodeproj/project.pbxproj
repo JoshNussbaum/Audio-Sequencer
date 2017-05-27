@@ -9,14 +9,6 @@
 /* Begin PBXBuildFile section */
 		0309E8E41AA330350072AC08 /* TimerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0309E8E31AA330350072AC08 /* TimerView.m */; };
 		030A8D161AA4516A00107112 /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = 030A8D0C1AA4516A00107112 /* AppIcon.appiconset */; };
-		030A8D171AA4516A00107112 /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 030A8D0D1AA4516A00107112 /* Icon-60.png */; };
-		030A8D181AA4516A00107112 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 030A8D0E1AA4516A00107112 /* Icon-72.png */; };
-		030A8D191AA4516A00107112 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 030A8D0F1AA4516A00107112 /* Icon-72@2x.png */; };
-		030A8D1A1AA4516A00107112 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 030A8D101AA4516A00107112 /* Icon-Small-50.png */; };
-		030A8D1B1AA4516A00107112 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 030A8D111AA4516A00107112 /* Icon-Small-50@2x.png */; };
-		030A8D1C1AA4516A00107112 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 030A8D121AA4516A00107112 /* Icon.png */; };
-		030A8D1D1AA4516A00107112 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 030A8D131AA4516A00107112 /* Icon@2x.png */; };
-		030A8D1E1AA4516A00107112 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 030A8D141AA4516A00107112 /* iTunesArtwork.png */; };
 		030A8D1F1AA4516A00107112 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 030A8D151AA4516A00107112 /* iTunesArtwork@2x.png */; };
 		0327D72B1ED567CF00A639C7 /* Clap 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0327D7201ED567CF00A639C7 /* Clap 1.wav */; };
 		0327D72C1ED567CF00A639C7 /* Hi Hat 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0327D7211ED567CF00A639C7 /* Hi Hat 1.wav */; };
@@ -24,12 +16,12 @@
 		0327D72E1ED567CF00A639C7 /* Kick 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0327D7231ED567CF00A639C7 /* Kick 1.wav */; };
 		0327D72F1ED567CF00A639C7 /* Kick 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0327D7241ED567CF00A639C7 /* Kick 2.wav */; };
 		0327D7301ED567CF00A639C7 /* Kick 3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0327D7251ED567CF00A639C7 /* Kick 3.wav */; };
-		0327D7311ED567CF00A639C7 /* Kick 4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0327D7261ED567CF00A639C7 /* Kick 4.wav */; };
 		0327D7321ED567CF00A639C7 /* Open Hat 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0327D7271ED567CF00A639C7 /* Open Hat 1.wav */; };
 		0327D7331ED567CF00A639C7 /* Snap 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0327D7281ED567CF00A639C7 /* Snap 1.wav */; };
 		0327D7341ED567CF00A639C7 /* Snare 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0327D7291ED567CF00A639C7 /* Snare 1.wav */; };
 		0327D7351ED567CF00A639C7 /* Snare 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0327D72A1ED567CF00A639C7 /* Snare 2.wav */; };
 		03410E171ABCD28B00216DEB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03410E161ABCD28B00216DEB /* Images.xcassets */; };
+		035C9D6E1EDA39B100B319D6 /* Bass Drum 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 035C9D6D1EDA39B100B319D6 /* Bass Drum 1.wav */; };
 		03874A631AA32B6900B4D50E /* GridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03874A621AA32B6900B4D50E /* GridView.m */; };
 		03DE75A61AA04F4400E11176 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DE75A51AA04F4400E11176 /* main.m */; };
 		03DE75A91AA04F4400E11176 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DE75A81AA04F4400E11176 /* AppDelegate.m */; };
@@ -52,14 +44,6 @@
 		0309E8E21AA330340072AC08 /* TimerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerView.h; sourceTree = "<group>"; };
 		0309E8E31AA330350072AC08 /* TimerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerView.m; sourceTree = "<group>"; };
 		030A8D0C1AA4516A00107112 /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AppIcon.appiconset; path = Icons/AppIcon.appiconset; sourceTree = SOURCE_ROOT; };
-		030A8D0D1AA4516A00107112 /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-60.png"; path = "Icons/Icon-60.png"; sourceTree = SOURCE_ROOT; };
-		030A8D0E1AA4516A00107112 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "Icons/Icon-72.png"; sourceTree = SOURCE_ROOT; };
-		030A8D0F1AA4516A00107112 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72@2x.png"; path = "Icons/Icon-72@2x.png"; sourceTree = SOURCE_ROOT; };
-		030A8D101AA4516A00107112 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50.png"; path = "Icons/Icon-Small-50.png"; sourceTree = SOURCE_ROOT; };
-		030A8D111AA4516A00107112 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50@2x.png"; path = "Icons/Icon-Small-50@2x.png"; sourceTree = SOURCE_ROOT; };
-		030A8D121AA4516A00107112 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Icons/Icon.png; sourceTree = SOURCE_ROOT; };
-		030A8D131AA4516A00107112 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Icons/Icon@2x.png"; sourceTree = SOURCE_ROOT; };
-		030A8D141AA4516A00107112 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iTunesArtwork.png; path = Icons/iTunesArtwork.png; sourceTree = SOURCE_ROOT; };
 		030A8D151AA4516A00107112 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iTunesArtwork@2x.png"; path = "Icons/iTunesArtwork@2x.png"; sourceTree = SOURCE_ROOT; };
 		0327D7201ED567CF00A639C7 /* Clap 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Clap 1.wav"; path = "Sounds/Clap 1.wav"; sourceTree = SOURCE_ROOT; };
 		0327D7211ED567CF00A639C7 /* Hi Hat 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Hi Hat 1.wav"; path = "Sounds/Hi Hat 1.wav"; sourceTree = SOURCE_ROOT; };
@@ -67,12 +51,12 @@
 		0327D7231ED567CF00A639C7 /* Kick 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Kick 1.wav"; path = "Sounds/Kick 1.wav"; sourceTree = SOURCE_ROOT; };
 		0327D7241ED567CF00A639C7 /* Kick 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Kick 2.wav"; path = "Sounds/Kick 2.wav"; sourceTree = SOURCE_ROOT; };
 		0327D7251ED567CF00A639C7 /* Kick 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Kick 3.wav"; path = "Sounds/Kick 3.wav"; sourceTree = SOURCE_ROOT; };
-		0327D7261ED567CF00A639C7 /* Kick 4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Kick 4.wav"; path = "Sounds/Kick 4.wav"; sourceTree = SOURCE_ROOT; };
 		0327D7271ED567CF00A639C7 /* Open Hat 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Open Hat 1.wav"; path = "Sounds/Open Hat 1.wav"; sourceTree = SOURCE_ROOT; };
 		0327D7281ED567CF00A639C7 /* Snap 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Snap 1.wav"; path = "Sounds/Snap 1.wav"; sourceTree = SOURCE_ROOT; };
 		0327D7291ED567CF00A639C7 /* Snare 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Snare 1.wav"; path = "Sounds/Snare 1.wav"; sourceTree = SOURCE_ROOT; };
 		0327D72A1ED567CF00A639C7 /* Snare 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Snare 2.wav"; path = "Sounds/Snare 2.wav"; sourceTree = SOURCE_ROOT; };
 		03410E161ABCD28B00216DEB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		035C9D6D1EDA39B100B319D6 /* Bass Drum 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Bass Drum 1.wav"; path = "Sounds/Bass Drum 1.wav"; sourceTree = SOURCE_ROOT; };
 		03874A611AA32B6900B4D50E /* GridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GridView.h; path = ../GridView.h; sourceTree = "<group>"; };
 		03874A621AA32B6900B4D50E /* GridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GridView.m; path = ../GridView.m; sourceTree = "<group>"; };
 		03DE75A01AA04F4400E11176 /* Audio Fuego.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Audio Fuego.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +102,7 @@
 		0327D7361ED567D500A639C7 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				035C9D6D1EDA39B100B319D6 /* Bass Drum 1.wav */,
 				03F0A2A41ED9607300897DBD /* Rim 1.wav */,
 				03F0A2A51ED9607300897DBD /* Rim 2.wav */,
 				03F0A2A61ED9607300897DBD /* Rim 3.wav */,
@@ -133,7 +118,6 @@
 				0327D7231ED567CF00A639C7 /* Kick 1.wav */,
 				0327D7241ED567CF00A639C7 /* Kick 2.wav */,
 				0327D7251ED567CF00A639C7 /* Kick 3.wav */,
-				0327D7261ED567CF00A639C7 /* Kick 4.wav */,
 				0327D7281ED567CF00A639C7 /* Snap 1.wav */,
 				03F0A2A91ED9607300897DBD /* Snap 2.wav */,
 				0327D7291ED567CF00A639C7 /* Snare 1.wav */,
@@ -185,14 +169,6 @@
 			children = (
 				0327D7361ED567D500A639C7 /* Sounds */,
 				030A8D0C1AA4516A00107112 /* AppIcon.appiconset */,
-				030A8D0D1AA4516A00107112 /* Icon-60.png */,
-				030A8D0E1AA4516A00107112 /* Icon-72.png */,
-				030A8D0F1AA4516A00107112 /* Icon-72@2x.png */,
-				030A8D101AA4516A00107112 /* Icon-Small-50.png */,
-				030A8D111AA4516A00107112 /* Icon-Small-50@2x.png */,
-				030A8D121AA4516A00107112 /* Icon.png */,
-				030A8D131AA4516A00107112 /* Icon@2x.png */,
-				030A8D141AA4516A00107112 /* iTunesArtwork.png */,
 				030A8D151AA4516A00107112 /* iTunesArtwork@2x.png */,
 				03DE75A41AA04F4400E11176 /* Info.plist */,
 				03DE75A51AA04F4400E11176 /* main.m */,
@@ -300,38 +276,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				03F0A2B11ED9607300897DBD /* Shaker 2.wav in Resources */,
-				0327D7311ED567CF00A639C7 /* Kick 4.wav in Resources */,
 				03F0A2B21ED9607300897DBD /* Snap 2.wav in Resources */,
 				0327D72E1ED567CF00A639C7 /* Kick 1.wav in Resources */,
-				030A8D171AA4516A00107112 /* Icon-60.png in Resources */,
 				0327D7331ED567CF00A639C7 /* Snap 1.wav in Resources */,
-				030A8D1E1AA4516A00107112 /* iTunesArtwork.png in Resources */,
-				030A8D1D1AA4516A00107112 /* Icon@2x.png in Resources */,
 				0327D72B1ED567CF00A639C7 /* Clap 1.wav in Resources */,
 				0327D72C1ED567CF00A639C7 /* Hi Hat 1.wav in Resources */,
 				03F0A2AF1ED9607300897DBD /* Rim 3.wav in Resources */,
 				03DE75AF1AA04F4400E11176 /* Main.storyboard in Resources */,
-				030A8D1B1AA4516A00107112 /* Icon-Small-50@2x.png in Resources */,
 				0327D7351ED567CF00A639C7 /* Snare 2.wav in Resources */,
 				0327D7301ED567CF00A639C7 /* Kick 3.wav in Resources */,
 				0327D7341ED567CF00A639C7 /* Snare 1.wav in Resources */,
-				030A8D191AA4516A00107112 /* Icon-72@2x.png in Resources */,
 				03F0A2B31ED9607300897DBD /* Triangle 1.wav in Resources */,
 				03F0A2AD1ED9607300897DBD /* Rim 1.wav in Resources */,
 				03F0A2AC1ED9607300897DBD /* Hi Hat 3.wav in Resources */,
 				03F0A2B41ED9607300897DBD /* Vox 1.wav in Resources */,
 				0327D72D1ED567CF00A639C7 /* Hi Hat 2.wav in Resources */,
 				03F0A2AE1ED9607300897DBD /* Rim 2.wav in Resources */,
-				030A8D181AA4516A00107112 /* Icon-72.png in Resources */,
 				03DE75B41AA04F4400E11176 /* LaunchScreen.xib in Resources */,
 				03410E171ABCD28B00216DEB /* Images.xcassets in Resources */,
 				030A8D161AA4516A00107112 /* AppIcon.appiconset in Resources */,
+				035C9D6E1EDA39B100B319D6 /* Bass Drum 1.wav in Resources */,
 				03F0A2B01ED9607300897DBD /* Shaker 1.wav in Resources */,
 				0327D72F1ED567CF00A639C7 /* Kick 2.wav in Resources */,
-				030A8D1A1AA4516A00107112 /* Icon-Small-50.png in Resources */,
 				0327D7321ED567CF00A639C7 /* Open Hat 1.wav in Resources */,
 				030A8D1F1AA4516A00107112 /* iTunesArtwork@2x.png in Resources */,
-				030A8D1C1AA4516A00107112 /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
